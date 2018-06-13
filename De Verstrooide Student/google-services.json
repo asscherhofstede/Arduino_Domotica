@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "81064838673",
+    "firebase_url": "https://de-verstrooide-student.firebaseio.com",
+    "project_id": "de-verstrooide-student",
+    "storage_bucket": "de-verstrooide-student.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81064838673:android:206cc4e094a9a3f4",
+        "android_client_info": {
+          "package_name": "com.xamarin.verstrooide_student"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81064838673-ns76tu51qt5hbgh53glr1v9j8bs2smuu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xamarin.verstrooide_student",
+            "certificate_hash": "3b033c6e00d15183f2e803826c65660cf987f914"
+          }
+        },
+        {
+          "client_id": "81064838673-49jp7ocoekeb4oogkn098fm0i9m37a3n.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "81064838673-49jp7ocoekeb4oogkn098fm0i9m37a3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALNvSmig80UH1tHsAMUa77sf_aUHSUzz8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81064838673-49jp7ocoekeb4oogkn098fm0i9m37a3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
