@@ -1,3 +1,7 @@
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\com.xamarin.verstrooide_student.apk
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\com.xamarin.verstrooide_student-Signed.apk
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Basement.dll.stamp
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Tasks.dll.stamp
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Base.dll.stamp
@@ -13,10 +17,6 @@ C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\XbdMerge\04db0838.proguard.stamp
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\googsvcsjson\values\goog_svcs_json.xml
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\De Verstrooide Student.csproj.CoreCompileInputs.cache
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\com.xamarin.verstrooide_student.apk
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\com.xamarin.verstrooide_student-Signed.apk
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\De Verstrooide Student.dll
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\De Verstrooide Student.pdb
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\bin\com.xamarin.verstrooide_student.apk
@@ -50,6 +50,7 @@ C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\mipmap-anydpi-v26\ic_stat_ic_notification.png
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\mipmap\ic_stat_ic_notification.png
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable\ic_stat_ic_notification.png
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\secondactivity.xml
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\R.cs.flag
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\R.txt
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\uploadflags.txt

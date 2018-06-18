@@ -808,6 +808,8 @@ int id auto 0x7f0b0023
 int id beginning 0x7f0b0037
 int id blocking 0x7f0b005e
 int id bottom 0x7f0b0045
+int id button1 0x7f0b00b7
+int id button2 0x7f0b00b8
 int id buttonPanel 0x7f0b006a
 int id cancel_action 0x7f0b00a7
 int id center 0x7f0b004c
@@ -864,9 +866,9 @@ int id line3 0x7f0b0018
 int id listMode 0x7f0b0026
 int id list_item 0x7f0b0068
 int id logTokenButton 0x7f0b0093
-int id masked 0x7f0b00b8
+int id masked 0x7f0b00bb
 int id media_actions 0x7f0b00a9
-int id message 0x7f0b00b6
+int id message 0x7f0b00b9
 int id middle 0x7f0b0039
 int id mini 0x7f0b005a
 int id msgText 0x7f0b0092
@@ -933,6 +935,7 @@ int id text 0x7f0b001a
 int id text2 0x7f0b001b
 int id textSpacerNoButtons 0x7f0b0071
 int id textSpacerNoTitle 0x7f0b0070
+int id textView1 0x7f0b00b6
 int id text_input_password_toggle 0x7f0b00a2
 int id textinput_counter 0x7f0b0014
 int id textinput_error 0x7f0b0015
@@ -952,7 +955,7 @@ int id uniform 0x7f0b0035
 int id up 0x7f0b0009
 int id useLogo 0x7f0b002e
 int id view_offset_helper 0x7f0b0016
-int id visible 0x7f0b00b7
+int id visible 0x7f0b00ba
 int id wide 0x7f0b0022
 int id withText 0x7f0b0044
 int id wrap_content 0x7f0b0036
@@ -1023,11 +1026,12 @@ int layout notification_template_media 0x7f040034
 int layout notification_template_media_custom 0x7f040035
 int layout notification_template_part_chronometer 0x7f040036
 int layout notification_template_part_time 0x7f040037
-int layout select_dialog_item_material 0x7f040038
-int layout select_dialog_multichoice_material 0x7f040039
-int layout select_dialog_singlechoice_material 0x7f04003a
-int layout support_simple_spinner_dropdown_item 0x7f04003b
-int layout tooltip 0x7f04003c
+int layout secondactivity 0x7f040038
+int layout select_dialog_item_material 0x7f040039
+int layout select_dialog_multichoice_material 0x7f04003a
+int layout select_dialog_singlechoice_material 0x7f04003b
+int layout support_simple_spinner_dropdown_item 0x7f04003c
+int layout tooltip 0x7f04003d
 int mipmap ic_launcher 0x7f030000
 int mipmap ic_launcher_foreground 0x7f030001
 int mipmap ic_launcher_round 0x7f030002

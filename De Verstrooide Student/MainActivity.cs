@@ -7,6 +7,7 @@ using Firebase.Messaging;
 using Firebase.Iid;
 using Android.Util;
 using System;
+using Android.Content;
 
 namespace De_Verstrooide_Student
 {
@@ -15,6 +16,7 @@ namespace De_Verstrooide_Student
     {
         TextView msgText;
         const string TAG = "MainActivity";
+        Intent intent;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -23,7 +25,7 @@ namespace De_Verstrooide_Student
             SetContentView(Resource.Layout.activity_main);
             msgText = FindViewById<TextView>(Resource.Id.msgText);
 
-            if(Intent.Extras != null)
+            if (Intent.Extras != null)
             {
                 foreach (var key in Intent.Extras.KeySet())
                 {
@@ -48,7 +50,7 @@ namespace De_Verstrooide_Student
             };
         }
 
-        private bool IsPlayServicesAvailable()
+        bool IsPlayServicesAvailable()
         {
             int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
             if(resultCode != ConnectionResult.Success)

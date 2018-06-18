@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>13-6-2018 13:37:31</xs:documentation>
+    <xs:documentation>18-6-2018 17:03:46</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -68,6 +68,7 @@
             <xs:enumeration value="@layout/notification_template_media_custom" />
             <xs:enumeration value="@layout/notification_template_part_chronometer" />
             <xs:enumeration value="@layout/notification_template_part_time" />
+            <xs:enumeration value="@layout/secondactivity" />
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
@@ -166,6 +167,7 @@
             <xs:enumeration value="@layout/notification_template_media_custom" />
             <xs:enumeration value="@layout/notification_template_part_chronometer" />
             <xs:enumeration value="@layout/notification_template_part_time" />
+            <xs:enumeration value="@layout/secondactivity" />
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
@@ -264,6 +266,7 @@
             <xs:enumeration value="@layout/notification_template_media_custom" />
             <xs:enumeration value="@layout/notification_template_part_chronometer" />
             <xs:enumeration value="@layout/notification_template_part_time" />
+            <xs:enumeration value="@layout/secondactivity" />
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
@@ -362,6 +365,7 @@
             <xs:enumeration value="@layout/notification_template_media_custom" />
             <xs:enumeration value="@layout/notification_template_part_chronometer" />
             <xs:enumeration value="@layout/notification_template_part_time" />
+            <xs:enumeration value="@layout/secondactivity" />
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />

@@ -3077,6 +3077,8 @@ containing a value of this type.
         public static int beginning=0x7f0b0037;
         public static int blocking=0x7f0b005e;
         public static int bottom=0x7f0b0045;
+        public static int button1=0x7f0b00b7;
+        public static int button2=0x7f0b00b8;
         public static int buttonPanel=0x7f0b006a;
         public static int cancel_action=0x7f0b00a7;
         public static int center=0x7f0b004c;
@@ -3133,9 +3135,9 @@ containing a value of this type.
         public static int listMode=0x7f0b0026;
         public static int list_item=0x7f0b0068;
         public static int logTokenButton=0x7f0b0093;
-        public static int masked=0x7f0b00b8;
+        public static int masked=0x7f0b00bb;
         public static int media_actions=0x7f0b00a9;
-        public static int message=0x7f0b00b6;
+        public static int message=0x7f0b00b9;
         public static int middle=0x7f0b0039;
         public static int mini=0x7f0b005a;
         public static int msgText=0x7f0b0092;
@@ -3202,6 +3204,7 @@ containing a value of this type.
         public static int text2=0x7f0b001b;
         public static int textSpacerNoButtons=0x7f0b0071;
         public static int textSpacerNoTitle=0x7f0b0070;
+        public static int textView1=0x7f0b00b6;
         public static int text_input_password_toggle=0x7f0b00a2;
         public static int textinput_counter=0x7f0b0014;
         public static int textinput_error=0x7f0b0015;
@@ -3221,7 +3224,7 @@ containing a value of this type.
         public static int up=0x7f0b0009;
         public static int useLogo=0x7f0b002e;
         public static int view_offset_helper=0x7f0b0016;
-        public static int visible=0x7f0b00b7;
+        public static int visible=0x7f0b00ba;
         public static int wide=0x7f0b0022;
         public static int withText=0x7f0b0044;
         public static int wrap_content=0x7f0b0036;
@@ -3296,11 +3299,12 @@ containing a value of this type.
         public static int notification_template_media_custom=0x7f040035;
         public static int notification_template_part_chronometer=0x7f040036;
         public static int notification_template_part_time=0x7f040037;
-        public static int select_dialog_item_material=0x7f040038;
-        public static int select_dialog_multichoice_material=0x7f040039;
-        public static int select_dialog_singlechoice_material=0x7f04003a;
-        public static int support_simple_spinner_dropdown_item=0x7f04003b;
-        public static int tooltip=0x7f04003c;
+        public static int secondactivity=0x7f040038;
+        public static int select_dialog_item_material=0x7f040039;
+        public static int select_dialog_multichoice_material=0x7f04003a;
+        public static int select_dialog_singlechoice_material=0x7f04003b;
+        public static int support_simple_spinner_dropdown_item=0x7f04003c;
+        public static int tooltip=0x7f04003d;
     }
     public static final class mipmap {
         public static int ic_launcher=0x7f030000;

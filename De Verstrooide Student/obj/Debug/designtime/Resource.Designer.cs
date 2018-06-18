@@ -3320,11 +3320,11 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7F0C0015
 			public const int add = 2131492885;
 			
-			// aapt resource value: 0x7F020151
-			public const int adjust_height = 2130837841;
+			// aapt resource value: 0x7F020154
+			public const int adjust_height = 2130837844;
 			
-			// aapt resource value: 0x7F020150
-			public const int adjust_width = 2130837840;
+			// aapt resource value: 0x7F020153
+			public const int adjust_width = 2130837843;
 			
 			// aapt resource value: 0x1
 			public const int ad_container = 1;
@@ -3353,8 +3353,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x1
 			public const int android_pay_light_with_border = 1;
 			
-			// aapt resource value: 0x7F020149
-			public const int app_name = 2130837833;
+			// aapt resource value: 0x7F020152
+			public const int app_name = 2130837842;
 			
 			// aapt resource value: 0x7F0C0006
 			public const int async = 2131492870;
@@ -3385,6 +3385,12 @@ namespace De_Verstrooide_Student
 			
 			// aapt resource value: 0x1
 			public const int button = 1;
+			
+			// aapt resource value: 0x7F020006
+			public const int button1 = 2130837510;
+			
+			// aapt resource value: 0x7F020007
+			public const int button2 = 2130837511;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -3500,8 +3506,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7F0C0024
 			public const int customPanel = 2131492900;
 			
-			// aapt resource value: 0x7F020155
-			public const int dark = 2130837845;
+			// aapt resource value: 0x7F020158
+			public const int dark = 2130837848;
 			
 			// aapt resource value: 0x1
 			public const int date = 1;
@@ -3608,8 +3614,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7F0C000B
 			public const int icon_group = 2131492875;
 			
-			// aapt resource value: 0x7F020154
-			public const int icon_only = 2130837844;
+			// aapt resource value: 0x7F020157
+			public const int icon_only = 2130837847;
 			
 			// aapt resource value: 0x1
 			public const int icon_uri = 1;
@@ -3671,8 +3677,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x1
 			public const int license_list = 1;
 			
-			// aapt resource value: 0x7F020156
-			public const int light = 2130837846;
+			// aapt resource value: 0x7F020159
+			public const int light = 2130837849;
 			
 			// aapt resource value: 0x7F0C000E
 			public const int line1 = 2131492878;
@@ -3923,8 +3929,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7F0C0072
 			public const int src_over = 2131492978;
 			
-			// aapt resource value: 0x7F020152
-			public const int standard = 2130837842;
+			// aapt resource value: 0x7F020155
+			public const int standard = 2130837845;
 			
 			// aapt resource value: 0x7F0C0073
 			public const int start = 2131492979;
@@ -3992,6 +3998,9 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x1
 			public const int textTitle = 1;
 			
+			// aapt resource value: 0x7F020005
+			public const int textView1 = 2130837509;
+			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
 			
@@ -4058,8 +4067,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7F0C008F
 			public const int visible = 2131493007;
 			
-			// aapt resource value: 0x7F020153
-			public const int wide = 2130837843;
+			// aapt resource value: 0x7F020156
+			public const int wide = 2130837846;
 			
 			// aapt resource value: 0x7F0C0090
 			public const int wrap_content = 2131493008;
@@ -4335,6 +4344,9 @@ namespace De_Verstrooide_Student
 			
 			// aapt resource value: 0x1
 			public const int place_autocomplete_progress = 1;
+			
+			// aapt resource value: 0x7F030003
+			public const int SecondActivity = 2130903043;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;

@@ -2552,6 +2552,12 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0045
 			public const int bottom = 2131427397;
 			
+			// aapt resource value: 0x7f0b00b7
+			public const int button1 = 2131427511;
+			
+			// aapt resource value: 0x7f0b00b8
+			public const int button2 = 2131427512;
+			
 			// aapt resource value: 0x7f0b006a
 			public const int buttonPanel = 2131427434;
 			
@@ -2720,14 +2726,14 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0093
 			public const int logTokenButton = 2131427475;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int masked = 2131427512;
+			// aapt resource value: 0x7f0b00bb
+			public const int masked = 2131427515;
 			
 			// aapt resource value: 0x7f0b00a9
 			public const int media_actions = 2131427497;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int message = 2131427510;
+			// aapt resource value: 0x7f0b00b9
+			public const int message = 2131427513;
 			
 			// aapt resource value: 0x7f0b0039
 			public const int middle = 2131427385;
@@ -2927,6 +2933,9 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0070
 			public const int textSpacerNoTitle = 2131427440;
 			
+			// aapt resource value: 0x7f0b00b6
+			public const int textView1 = 2131427510;
+			
 			// aapt resource value: 0x7f0b00a2
 			public const int text_input_password_toggle = 2131427490;
 			
@@ -2984,8 +2993,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int visible = 2131427511;
+			// aapt resource value: 0x7f0b00ba
+			public const int visible = 2131427514;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int wide = 2131427362;
@@ -3224,19 +3233,22 @@ namespace De_Verstrooide_Student
 			public const int notification_template_part_time = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int select_dialog_item_material = 2130968632;
+			public const int SecondActivity = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int select_dialog_multichoice_material = 2130968633;
+			public const int select_dialog_item_material = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int select_dialog_singlechoice_material = 2130968634;
+			public const int select_dialog_multichoice_material = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int support_simple_spinner_dropdown_item = 2130968635;
+			public const int select_dialog_singlechoice_material = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int tooltip = 2130968636;
+			public const int support_simple_spinner_dropdown_item = 2130968636;
+			
+			// aapt resource value: 0x7f04003d
+			public const int tooltip = 2130968637;
 			
 			static Layout()
 			{

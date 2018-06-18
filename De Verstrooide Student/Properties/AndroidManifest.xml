@@ -3,6 +3,22 @@
           package="com.xamarin.verstrooide_student" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="16" />
   <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" >
+    <activity android:name=".Activities.MainActivity">
+      <intent-filter>
+        <action android:name=".Activities.MainActivity" />
+        <category android:name="android.intent.category_MAIN" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="MainActivity" />
+        <category android:name="android.intent.category_LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.SecondActivity">
+      <intent-filter>
+        <action android:name="SecondActivity" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
     <receiver
        android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
        android:exported="false" />
@@ -15,7 +31,6 @@
         <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
         <category android:name="${applicationId}" />
       </intent-filter>
-    </receiver>
-    
+    </receiver>    
   </application>
 </manifest>

@@ -13,25 +13,64 @@ namespace De_Verstrooide_Student
         const string TAG = "MyFirebaseMsgService";
         public override void OnMessageReceived(RemoteMessage message)
         {
+            string title = "";
+            string body = "";
+            string click_action = "";
+
             Log.Debug(TAG, "From: " + message.From);
-            Log.Debug(TAG, "Notification Message Body: " + message.GetNotification().Body);
-            SendNotification(message.GetNotification().Body, message.Data);
+            //Log.Debug(TAG, "Notification Message Body: " + message.GetNotification().Body);
+            
+            if (message.Data.Count > 0)
+            {
+                Log.Debug(TAG, "Message data payload: {0}", message.Data);
+                IDictionary<string, string> data = message.Data;
+                foreach (KeyValuePair<string, string> kvp in data)
+                {
+                    Log.Debug(TAG, "Key = {0}, Value = {1}", kvp.Key, kvp.Value);
+                    if(kvp.Key == "title")
+                    {
+                        title = kvp.Value;
+                    }
+                    else if (kvp.Key == "body")
+                    {
+                        body = kvp.Value;
+                    }
+                    else if(kvp.Key == "click_action")
+                    {
+                        click_action = kvp.Value;
+                    }
+                }
+            }
+            if (title != "" && body != "" && click_action != "")
+            {
+                SendNotification(title, body, click_action);
+            }
         }
 
-        void SendNotification(string messageBody, IDictionary<string, string> data)
+        void SendNotification(string title, string body, string click_Action)
         {
-            var intent = new Intent(this, typeof(MainActivity));
-            intent.AddFlags(ActivityFlags.ClearTop);
-            foreach (string key in data.Keys)
+            Intent intent;
+            if (click_Action.Equals("SecondActivity"))
             {
-                intent.PutExtra(key, data[key]);
+                intent = new Intent(this, typeof(SecondActivity));
+                intent.AddFlags(ActivityFlags.ClearTop);
+            }
+            else if (click_Action.Equals("MainActivity"))
+            {
+                intent = new Intent(this, typeof(MainActivity));
+                intent.AddFlags(ActivityFlags.ClearTop);
+            }
+            else
+            {
+                intent = new Intent(this, typeof(MainActivity));
+                intent.AddFlags(ActivityFlags.ClearTop);
             }
             var pendingIntent = PendingIntent.GetActivity(this, 0, intent, PendingIntentFlags.OneShot);
 
             var notificationBuilder = new Notification.Builder(this)
                 .SetSmallIcon(Resource.Drawable.ic_stat_ic_notification)
-                .SetContentTitle("FCM Message")
-                .SetContentText(messageBody)
+                .SetContentTitle(title)
+                .SetContentText(body)
                 .SetAutoCancel(true)
                 .SetContentIntent(pendingIntent);
 

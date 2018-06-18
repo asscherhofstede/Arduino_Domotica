@@ -36,20 +36,21 @@ void loop() {
     //Serial.print(char(Serial.read()));
     if(Serial.read() == 'b')
     {
-      SendDataToFirebase("De Verstrooide Student", "Je hebt op de knop gedrukt!");
+      SendDataToFirebase("De Verstrooide Student", "Je hebt op de knop gedrukt!", "mainactivity");//Goed opletten met de hoofdletters voor de activity
     }
   }  
   delay(250);
 }
 
-void SendDataToFirebase(String title, String msg) {
+void SendDataToFirebase(String title, String msg, String activity) {
   //more info @ https://firebase.google.com/docs/cloud-messaging/http-server-ref
 
   String data = "{";
   data = data + "\"to\": \"" + smartphoneId + "\",";
-  data = data + "\"notification\": {";
+  data = data + "\"data\": {";
   data = data + "\"body\": \"" + msg + "\",";
-  data = data + "\"title\" : \"" + title + "\" ";
+  data = data + "\"title\" : \"" + title + "\",";
+  data = data + "\"click_action\" : \"" + activity + "\" ";
   data = data + "} }";
 
   http.begin("http://fcm.googleapis.com/fcm/send");
