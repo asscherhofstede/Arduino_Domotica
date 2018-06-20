@@ -13,9 +13,33 @@
         <category android:name="android.intent.category_LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".Activities.SecondActivity">
+    <activity android:name=".Activities.Kliko">
       <intent-filter>
-        <action android:name="SecondActivity" />
+        <action android:name="Kliko" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.Koelkast">
+      <intent-filter>
+        <action android:name="Koelkast" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.Ventilator">
+      <intent-filter>
+        <action android:name="Ventilator" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.Wasmand">
+      <intent-filter>
+        <action android:name="Wasmand" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.KoffieZetApparaat">
+      <intent-filter>
+        <action android:name="KoffieZetApparaat" />
         <category android:name="android.intent.category_DEFAULT" />
       </intent-filter>
     </activity>

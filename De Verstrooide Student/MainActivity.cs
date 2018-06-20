@@ -8,6 +8,7 @@ using Firebase.Iid;
 using Android.Util;
 using System;
 using Android.Content;
+using System.Collections.Generic;
 
 namespace De_Verstrooide_Student
 {
@@ -17,6 +18,7 @@ namespace De_Verstrooide_Student
         TextView msgText;
         const string TAG = "MainActivity";
         Intent intent;
+        string click_action = "";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -31,6 +33,40 @@ namespace De_Verstrooide_Student
                 {
                     var value = Intent.Extras.GetString(key);
                     Log.Debug(TAG, "Key: {0} Value: {1}", key, value);
+                    if (key == "click_action")
+                    {
+                        click_action = value;
+                    }
+                }
+                if (click_action.Equals("Kliko"))
+                {
+                    intent = new Intent(this, typeof(Kliko));
+                    intent.AddFlags(ActivityFlags.ClearTop);
+                    StartActivity(intent);
+                }
+                else if (click_action.Equals("Koelkast"))
+                {
+                    intent = new Intent(this, typeof(Koelkast));
+                    intent.AddFlags(ActivityFlags.ClearTop);
+                    StartActivity(intent);
+                }
+                else if (click_action.Equals("Ventilator"))
+                {
+                    intent = new Intent(this, typeof(Ventilator));
+                    intent.AddFlags(ActivityFlags.ClearTop);
+                    StartActivity(intent);
+                }
+                else if(click_action.Equals("Wasmand"))
+                {
+                    intent = new Intent(this, typeof(Wasmand));
+                    intent.AddFlags(ActivityFlags.ClearTop);
+                    StartActivity(intent);
+                }
+                else if(click_action.Equals("KoffieZetApparaat"))
+                {
+                    intent = new Intent(this, typeof(KoffieZetApparaat));
+                    intent.AddFlags(ActivityFlags.ClearTop);
+                    StartActivity(intent);
                 }
             }
 

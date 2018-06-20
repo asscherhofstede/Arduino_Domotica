@@ -54,6 +54,12 @@ C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\R.cs.flag
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\R.txt
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\uploadflags.txt
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\koelkast.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\koffiezetapparaat.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\ventilator.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\wasmand.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\kliko.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\Mono.Android.pdb
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\mscorlib.pdb
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\System.Core.pdb
@@ -74,18 +80,4 @@ C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\linksrc\System.Runtime.Serialization.pdb
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\linksrc\Mono.Security.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\linksrc\De Verstrooide Student.dll.mdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll.mdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\De Verstrooide Student.dll.mdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\Mono.Android.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\Mono.Security.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\mscorlib.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\System.Core.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\System.Net.Http.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\System.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\System.Runtime.Serialization.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\assets\System.Xml.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\linksrc\De Verstrooide Student.dll.mdb

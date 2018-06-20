@@ -4276,6 +4276,15 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
+			// aapt resource value: 0x7F030003
+			public const int Kliko = 2130903043;
+			
+			// aapt resource value: 0x7F030004
+			public const int Koelkast = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int KoffieZetApparaat = 2130903045;
+			
 			// aapt resource value: 0x1
 			public const int libraries_social_licenses_license = 1;
 			
@@ -4345,8 +4354,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x1
 			public const int place_autocomplete_progress = 1;
 			
-			// aapt resource value: 0x7F030003
-			public const int SecondActivity = 2130903043;
+			// aapt resource value: 0x7F030006
+			public const int SecondActivity = 2130903046;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;
@@ -4363,8 +4372,14 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7F0F003C
 			public const int tooltip = 2131689532;
 			
+			// aapt resource value: 0x7F030007
+			public const int Ventilator = 2130903047;
+			
 			// aapt resource value: 0x1
 			public const int wallet_test_layout = 1;
+			
+			// aapt resource value: 0x7F030008
+			public const int Wasmand = 2130903048;
 			
 			static Layout()
 			{
