@@ -9,7 +9,7 @@ WiFiClient client;
 HTTPClient http;
 
 String fcmServer = "AAAAEt_XRhE:APA91bEycJ4U7rC0fELTPHfBX77-XRtl4t1Wl_hAjMEVFCRqkdef_6WnpB0Sgh-B8r1FxyzJMS3E9JhI3igx2sblQoRtIu_igDxEHVzBTS_8T7ozFov5ywEpRs-7-q0piDi2h7NUtZhg";
-String smartphoneId = "c5DaGBBU9BQ:APA91bHzhTYk7BIdx0D8bKcu550PnHoFIQqX8OR_VPzX4nsWqRa7MOl017ZgIyfnaFtfqQK_Oge0I6-yNvqC57sxXlAi9T7tJ4Z1faxgwHmx6uXoIrijFEZ5T5EWBK9jFLWTBXecftBFnflF-RL9mnI_1mIbdlJ9-A";
+String smartphoneId = "dKtWXr9fKqw:APA91bGNv6WdXhXa35HSOcswLOOk02zlqm118LvXDCXdoya8hrhcd5QBz7IItqtdiixHauhvf6ve1pevqVVX1E9fFa3Y6GzS7uFypTlcnaDfQZoRNC4PKOP7fozgrDrpiCgrpc3jO2IhRjR9zwqu7G2F869t42XzpA";
 
 void setup() {
   // put your setup code here, to run once:
@@ -41,22 +41,22 @@ void loop() {
     //Koelkast
     else if(input == 'b')
     {
-      SendDataToFirebase("De Verstrooide Student", "Zet de kliko aan de weg!! ", "Koelkast");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "Koelkast staat open!! ", "Koelkast");//Goed opletten met de hoofdletters voor de activity
     }
     //Ventilator
     else if(input == 'c')
     {
-      SendDataToFirebase("De Verstrooide Student", "Zet de kliko aan de weg!! ", "Ventilator");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "Ventilator gaat aan!! ", "Ventilator");//Goed opletten met de hoofdletters voor de activity
     }
     //Wasmand
     else if(input == 'd')
     {
-      SendDataToFirebase("De Verstrooide Student", "Zet de kliko aan de weg!! ", "Wasmand");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "De wasmand zit vol!! ", "Wasmand");//Goed opletten met de hoofdletters voor de activity
     }
     //KoffieZetApparaat
     else if(input == 'e')
     {
-      SendDataToFirebase("De Verstrooide Student", "Zet de kliko aan de weg!! ", "KoffieZetApparaat");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "Koffie gaat aan!! ", "KoffieZetApparaat");//Goed opletten met de hoofdletters voor de activity
     }
   }  
   delay(250);

@@ -15,9 +15,33 @@
         <category android:name="android.intent.category_LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".Activities.SecondActivity">
+    <activity android:name=".Activities.Kliko">
       <intent-filter>
-        <action android:name="SecondActivity" />
+        <action android:name="Kliko" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.Koelkast">
+      <intent-filter>
+        <action android:name="Koelkast" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.Ventilator">
+      <intent-filter>
+        <action android:name="Ventilator" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.Wasmand">
+      <intent-filter>
+        <action android:name="Wasmand" />
+        <category android:name="android.intent.category_DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activities.KoffieZetApparaat">
+      <intent-filter>
+        <action android:name="KoffieZetApparaat" />
         <category android:name="android.intent.category_DEFAULT" />
       </intent-filter>
     </activity>
@@ -48,7 +72,6 @@
         <action android:name="com.google.firebase.MESSAGING_EVENT" />
       </intent-filter>
     </service>
-    <activity android:label="Second Activity" android:theme="@style/AppTheme" android:name="md502d934fdfe16155a327ed6411b05121a.SecondActivity" />
     <activity android:label="Ventilator" android:name="md502d934fdfe16155a327ed6411b05121a.Ventilator" />
     <activity android:label="Wasmand" android:name="md502d934fdfe16155a327ed6411b05121a.Wasmand" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.xamarin.verstrooide_student.mono.MonoRuntimeProvider.__mono_init__" />
@@ -67,6 +90,8 @@
         <action android:name="com.google.firebase.MESSAGING_EVENT" />
       </intent-filter>
     </service>
+    <!-- FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true" -->
     <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
   </application>

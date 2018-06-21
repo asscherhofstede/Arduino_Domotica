@@ -4,25 +4,37 @@
 #include <TimeLib.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
+#include <NewRemoteTransmitter.h>   //transmitter sensor
+
+#define unitCodeApa3      29362034
 
 //Define pins
-#define tempPin 7
+#define RFPin               4
+#define trigPinWasmand      5
+#define echoPinWasmand      6
+#define tempPin             7
+#define buzzer              8
+#define echoPinKliko        9
+#define trigPinKliko        10
 
-#define echoPin 9
-#define trigPin 10
-
-#define ledPin 11 //moet nog even kijken welke pins dit zijn
-#define magnet 12 //moet nog even kijken welke pins dit zijn
+ //moet nog even kijken welke pins dit zijn
+#define magnet A0 //moet nog even kijken welke pins dit zijn
 
 
 //Variables
 int countKliko = 0;
 int countKoelkast = 0;
+int countWasmand = 0;
+int countVentilator = 0;
 int minutes = 0;
-
+int sound = 0;
 OneWire oneWire(tempPin);
 DallasTemperature sensors(&oneWire);
 float temperatuur = 0;
+bool geluid = true;
+bool unit1 = false;
+
+NewRemoteTransmitter apa3Transmitter(unitCodeApa3, RFPin, 260, 3);    //transmitter
 
 
 //Instantiate serial communication between arduino and esp8266 module
@@ -35,10 +47,13 @@ void setup() {
   sensors.begin();
 
   //pinmodes
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
+  pinMode(trigPinKliko, OUTPUT);
+  pinMode(echoPinKliko, INPUT);
+
+  pinMode(trigPinWasmand, OUTPUT);
+  pinMode(echoPinWasmand, INPUT);
   
-  pinMode(ledPin, OUTPUT);
+  pinMode(buzzer, OUTPUT);
   pinMode(magnet, INPUT);
 
 
@@ -62,19 +77,21 @@ void loop() {
   delay(200);
   //KoffieZetApparaat(); 
   delay(200);
+
+
 }
 
 void Kliko(){  
-  long duration, distance;
-  digitalWrite(trigPin, LOW); 
+  long durationKliko, distanceKliko;
+  digitalWrite(trigPinKliko, LOW); 
   delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
+  digitalWrite(trigPinKliko, HIGH);
   delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  duration = pulseIn(echoPin, HIGH);
-  distance = (duration/2) / 29.1;
+  digitalWrite(trigPinKliko, LOW);
+  durationKliko = pulseIn(echoPinKliko, HIGH);
+  distanceKliko = (durationKliko/2) / 29.1;
 
-  if (distance > 30 || distance <= 0){
+  if (distanceKliko > 30 || distanceKliko <= 0){
     if (countKliko <= 60){
     Serial.print("Kliko is ");
     Serial.print(countKliko);
@@ -93,7 +110,7 @@ void Kliko(){
    Serial.println("Kliko staat op zijn plek :D");
   }
   
-  if(countKliko == 60 && weekday() == 2 && hour() >= 9)
+  if(countKliko == 5 && weekday() == 2 && hour() >= 9)
   {
     Serial.println("Zet de kliko aan de weg!");
     Arduino.print('a'); 
@@ -105,15 +122,30 @@ void Koelkast(){
   if(digitalRead(magnet) == HIGH)
   {
     countKoelkast++;
-    if ( countKoelkast >= 10)
+    Serial.println(countKoelkast);
+    if ( countKoelkast == 5)
     {
-    digitalWrite(ledPin, HIGH);
+      Arduino.print('b');
+      Serial.println("Doe de Koelkast dicht nerd");
     } 
+     if ( countKoelkast > 5)
+    {
+      if (geluid == true){
+        sound = 1500;
+        tone(buzzer, sound);
+        geluid = false;
+      }
+      else {
+        sound = 2500;
+        tone(buzzer, sound);
+        geluid = true;
+      }
+    }
   }
-  else
+  if(digitalRead(magnet) == LOW)
   {
-    digitalWrite(ledPin, LOW);
     countKoelkast = 0;
+    noTone(buzzer);
   }
 }
 
@@ -124,22 +156,73 @@ void Ventilator(){
   Serial.print(temperatuur);
   Serial.print("°");  
   Serial.println("C");
-  if (temperatuur >= 20)
+  if (temperatuur >= 27 && countVentilator >= 10)         //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
   {
-    Serial.println("Ventilator is aan!");
+    if(!unit1)
+          {
+            countVentilator = 0;
+            apa3Transmitter.sendUnit(0, 1);               //Unit1 gaat AAN
+            Arduino.print('c');                           //Geeft waarde 'AAN' naar ESP module
+            unit1 = true;
+                Serial.println("Ventilator is aan!");
+          }
+
   }
-  else
+  else if (temperatuur < 27 && countVentilator >= 10)     //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
   {
-    Serial.println("Ventilator is uit!");
+    if(unit1) 
+    {
+      countVentilator = 0;
+      apa3Transmitter.sendUnit(0, 0);                     //Unit1 gaat UIT
+      Arduino.print('f');                                 //Geeft waarde 'UIT' naar ESP module
+      unit1 = false;                                      
+      Serial.println("Ventilator is uit!");
+    }
   }
-  delay(500);
+
+  countVentilator++; 
+            Serial.println(countVentilator);                         
 }
 
 void Wasmand(){
+  long durationWasmand, distanceWasmand;
+  digitalWrite(trigPinWasmand, LOW); 
+  delayMicroseconds(2);
+  digitalWrite(trigPinWasmand, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPinWasmand, LOW);
+  durationWasmand = pulseIn(echoPinWasmand, HIGH);
+  distanceWasmand = (durationWasmand/2) / 29.1;
+
+  if (distanceWasmand < 20){
+    if (countKliko <= 60){
+    Serial.print("De wasmand is ");
+    Serial.print(countWasmand);
+    Serial.println(" seconde vol");
+    }
+    if (countWasmand >= 60){
+      minutes = countWasmand / 60;
+      Serial.print("De wasmand is ");
+      Serial.print(minutes);
+      Serial.println(" minuut/minuten vol");
+    }
+    countWasmand++;
+  }
+  else {
+   countWasmand = 0;
+   Serial.println("Je hoeft nog niet te wassen :D");
+  }
   
+  if(countWasmand == 10 && weekday() == 2 && hour() >= 9)
+  {
+    Serial.println("De wasmand zit vol!");
+    Arduino.print('d'); 
+  } 
 }
 
 void KoffieZetApparaat(){
-  
+
+
 }
+
 
