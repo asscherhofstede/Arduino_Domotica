@@ -7,13 +7,14 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 
 namespace De_Verstrooide_Student
 {
     [Activity(Label = "Kliko")]
-    public class Kliko : Activity
+    public class Kliko : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {

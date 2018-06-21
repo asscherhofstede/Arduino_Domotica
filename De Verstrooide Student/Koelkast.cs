@@ -7,13 +7,14 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 
 namespace De_Verstrooide_Student
 {
     [Activity(Label = "Koelkast")]
-    public class Koelkast : Activity
+    public class Koelkast : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {

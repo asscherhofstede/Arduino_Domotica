@@ -9,7 +9,7 @@ WiFiClient client;
 HTTPClient http;
 
 String fcmServer = "AAAAEt_XRhE:APA91bEycJ4U7rC0fELTPHfBX77-XRtl4t1Wl_hAjMEVFCRqkdef_6WnpB0Sgh-B8r1FxyzJMS3E9JhI3igx2sblQoRtIu_igDxEHVzBTS_8T7ozFov5ywEpRs-7-q0piDi2h7NUtZhg";
-String smartphoneId = "dKtWXr9fKqw:APA91bGNv6WdXhXa35HSOcswLOOk02zlqm118LvXDCXdoya8hrhcd5QBz7IItqtdiixHauhvf6ve1pevqVVX1E9fFa3Y6GzS7uFypTlcnaDfQZoRNC4PKOP7fozgrDrpiCgrpc3jO2IhRjR9zwqu7G2F869t42XzpA";
+String smartphoneId = "fQyxkSDGb1U:APA91bHAaCaUv26F1G3HQXfrYLWcwOnAlNsfjSByY77lXnLlbrqSz5DUWPLfsf5BffZNj43C2GQi3lbwZhbl6iovOiVxUW3qk_tZtlmvl750O_6npsTpgpkdCnHNpnfAZC-JLCtlHXnkuMATcjDoCcAo4N_lgPviVA";
 
 void setup() {
   // put your setup code here, to run once:
@@ -36,27 +36,27 @@ void loop() {
     //Kliko
     if(input == 'a')
     {
-      SendDataToFirebase("De Verstrooide Student", "Je hebt op de knop gedrukt!", "Kliko");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "Zet je kliko buiten", "Kliko");//Goed opletten met de hoofdletters voor de activity
     }
     //Koelkast
     else if(input == 'b')
     {
-      SendDataToFirebase("De Verstrooide Student", "Koelkast staat open!! ", "Koelkast");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "Koelkast staat open!! ", "Koelkast");
     }
     //Ventilator
     else if(input == 'c')
     {
-      SendDataToFirebase("De Verstrooide Student", "Ventilator gaat aan!! ", "Ventilator");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "Ventilator gaat aan!! ", "Ventilator");
     }
     //Wasmand
     else if(input == 'd')
     {
-      SendDataToFirebase("De Verstrooide Student", "De wasmand zit vol!! ", "Wasmand");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "De wasmand zit vol!! ", "Wasmand");
     }
     //KoffieZetApparaat
     else if(input == 'e')
     {
-      SendDataToFirebase("De Verstrooide Student", "Koffie gaat aan!! ", "KoffieZetApparaat");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "Koffie gaat aan!! ", "KoffieZetApparaat");
     }
   }  
   delay(250);
@@ -69,7 +69,8 @@ void SendDataToFirebase(String title, String msg, String activity) {
   data = data + "\"to\": \"" + smartphoneId + "\",";
   data = data + "\"notification\": {";
   data = data + "\"body\": \"" + msg + "\",";
-  data = data + "\"title\" : \"" + title + "\" ";
+  data = data + "\"title\" : \"" + title + "\",";
+  data = data + "\"sound\" : \"default\" ";
   data = data + "}, ";
   data = data + "\"data\": {";
   data = data + "\"click_action\": \"" + activity + "\" ";

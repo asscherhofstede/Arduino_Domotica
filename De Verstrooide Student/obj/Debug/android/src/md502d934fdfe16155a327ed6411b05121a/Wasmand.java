@@ -2,7 +2,7 @@ package md502d934fdfe16155a327ed6411b05121a;
 
 
 public class Wasmand
-	extends android.app.Activity
+	extends android.support.v7.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {

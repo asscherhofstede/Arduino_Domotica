@@ -4,36 +4,37 @@
 #include <TimeLib.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
-#include <NewRemoteTransmitter.h>   //transmitter sensor
+#include <NewRemoteTransmitter.h>
 
-#define unitCodeApa3      29362034
+
 
 //Define pins
+#define unitCodeApa3        29362034
 #define RFPin               4
-#define trigPinWasmand      5
-#define echoPinWasmand      6
-#define tempPin             7
-#define buzzer              8
-#define echoPinKliko        9
-#define trigPinKliko        10
 
- //moet nog even kijken welke pins dit zijn
-#define magnet A0 //moet nog even kijken welke pins dit zijn
+#define echoPinKliko        5
+#define trigPinKliko        6
+
+#define tempPin             7
+
+#define buzzer              8
+#define magnet              A0
+
+#define echoPinWasmand      9
+#define trigPinWasmand      10
+
+
 
 
 //Variables
-int countKliko = 0;
-int countKoelkast = 0;
-int countWasmand = 0;
-int countVentilator = 0;
-int minutes = 0;
-int sound = 0;
+int countKliko, countKoelkast, countWasmand, countVentilator, minutes, sound;
+
 OneWire oneWire(tempPin);
 DallasTemperature sensors(&oneWire);
 float temperatuur = 0;
 bool geluid = true;
 bool unit1 = false;
-
+ 
 NewRemoteTransmitter apa3Transmitter(unitCodeApa3, RFPin, 260, 3);    //transmitter
 
 
@@ -69,11 +70,11 @@ void loop() {
   //Of in je method al de if statement --> ziet er naar mijn mening beter uit.
   Kliko();
   delay(200);
-  //Koelkast();
+  Koelkast();
   delay(200);
-  //Ventilator();
+  Ventilator();
   delay(200);
-  //Wasmand();
+  Wasmand();
   delay(200);
   //KoffieZetApparaat(); 
   delay(200);
@@ -180,8 +181,7 @@ void Ventilator(){
     }
   }
 
-  countVentilator++; 
-            Serial.println(countVentilator);                         
+  countVentilator++;                      
 }
 
 void Wasmand(){
