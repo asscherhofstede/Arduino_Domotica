@@ -2,17 +2,27 @@
 #include <SoftwareSerial.h>
 #include <Time.h>
 #include <TimeLib.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
 
 //Define pins
-#define trigPin 10
+#define tempPin 7
+
 #define echoPin 9
+#define trigPin 10
 
 #define ledPin 11 //moet nog even kijken welke pins dit zijn
 #define magnet 12 //moet nog even kijken welke pins dit zijn
 
+
 //Variables
 int countKliko = 0;
 int minutes = 0;
+
+OneWire oneWire(tempPin);
+DallasTemperature sensors(&oneWire);
+float temperatuur = 0;
+
 
 //Instantiate serial communication between arduino and esp8266 module
 SoftwareSerial Arduino(2, 3); //RX || TX
@@ -21,6 +31,7 @@ SoftwareSerial Arduino(2, 3); //RX || TX
 void setup() {
   Serial.begin(115200);
   Arduino.begin(115200);
+  sensors.begin();
 
   //pinmodes
   pinMode(trigPin, OUTPUT);
@@ -101,7 +112,14 @@ void Koelkast(){
 }
 
 void Ventilator(){
+  sensors.requestTemperatures();
+  temperatuur = sensors.getTempCByIndex(0);
   
+  if(temperatuur > 25){
+    //Arduino.print('c');
+    //het stopcontact aanzetten
+  }
+  delay(1000);
 }
 
 void Wasmand(){
