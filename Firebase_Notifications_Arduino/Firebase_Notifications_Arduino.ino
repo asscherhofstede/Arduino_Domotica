@@ -120,11 +120,19 @@ void Koelkast(){
 void Ventilator(){
   sensors.requestTemperatures();
   temperatuur = sensors.getTempCByIndex(0);
-  
-  if(temperatuur > 25){
-    //Arduino.print('c');
-    //het stopcontact aanzetten
+  Serial.print("Temp = ");
+  Serial.print(temperatuur);
+  Serial.print("°");  
+  Serial.println("C");
+  if (temperatuur >= 20)
+  {
+    Serial.println("Ventilator is aan!");
   }
+  else
+  {
+    Serial.println("Ventilator is uit!");
+  }
+  delay(500);
 }
 
 void Wasmand(){
