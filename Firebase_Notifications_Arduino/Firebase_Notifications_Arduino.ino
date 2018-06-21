@@ -17,6 +17,7 @@
 
 //Variables
 int countKliko = 0;
+int countKoelkast = 0;
 int minutes = 0;
 
 OneWire oneWire(tempPin);
@@ -52,16 +53,15 @@ void loop() {
   //Of per onderdeel eerst de method en dan de if statement?
   //Of in je method al de if statement --> ziet er naar mijn mening beter uit.
   Kliko();
+  delay(200);
   //Koelkast();
+  delay(200);
   //Ventilator();
+  delay(200);
   //Wasmand();
-  //KoffieZetApparaat();
-  if(countKliko == 10 && weekday() == 2 && hour() >= 9)
-  {
-    Serial.println("Zet de kliko aan de weg!");
-    Arduino.print('a'); 
-    delay(500);  
-  } 
+  delay(200);
+  //KoffieZetApparaat(); 
+  delay(200);
 }
 
 void Kliko(){  
@@ -75,8 +75,8 @@ void Kliko(){
   distance = (duration/2) / 29.1;
 
   if (distance > 30 || distance <= 0){
-    if (count <= 60){
-    Serial.print("Kliko is al ");
+    if (countKliko <= 60){
+    Serial.print("Kliko is ");
     Serial.print(countKliko);
     Serial.println(" seconde weg");
     }
@@ -90,15 +90,22 @@ void Kliko(){
   }
   else {
    countKliko = 0;
+   Serial.println("Kliko staat op zijn plek :D");
   }
-  delay(900);  
+  
+  if(countKliko == 60 && weekday() == 2 && hour() >= 9)
+  {
+    Serial.println("Zet de kliko aan de weg!");
+    Arduino.print('a'); 
+  } 
+ 
 }
 
 void Koelkast(){
   if(digitalRead(magnet) == HIGH)
   {
-    count++;
-    if ( count >= 10)
+    countKoelkast++;
+    if ( countKoelkast >= 10)
     {
     digitalWrite(ledPin, HIGH);
     } 
@@ -106,9 +113,8 @@ void Koelkast(){
   else
   {
     digitalWrite(ledPin, LOW);
-    count = 0;
+    countKoelkast = 0;
   }
-  delay(1000);
 }
 
 void Ventilator(){
@@ -119,7 +125,6 @@ void Ventilator(){
     //Arduino.print('c');
     //het stopcontact aanzetten
   }
-  delay(1000);
 }
 
 void Wasmand(){
