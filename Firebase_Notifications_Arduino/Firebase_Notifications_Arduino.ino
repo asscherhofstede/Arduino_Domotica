@@ -221,7 +221,16 @@ void Wasmand(){
 }
 
 void KoffieZetApparaat(){
-
+ if(hour() >= 8)
+  {
+    Serial.println("Koffie gaat aan");
+     pa3Transmitter.sendUnit(1, 1); 
+   
+  } 
+  else if ( hour() =< 10)
+  {
+     apa3Transmitter.sendUnit(0, 1); 
+  }
 
 }
 
