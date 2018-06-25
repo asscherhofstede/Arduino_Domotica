@@ -652,26 +652,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Christiaan Bakker\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\Kevin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NHL HBO ICT\\Jaar 1\\Project Domotica B\\Project b Laatste week\\De Verstrooide Student\\De Verstrooide Student.csproj",
+      "projectUniqueName": "C:\\Users\\Kevin\\Desktop\\School\\Periode 4\\Project Domotica\\De Verstrooide Student\\De Verstrooide Student\\De Verstrooide Student.csproj",
       "projectName": "De Verstrooide Student",
-      "projectPath": "D:\\NHL HBO ICT\\Jaar 1\\Project Domotica B\\Project b Laatste week\\De Verstrooide Student\\De Verstrooide Student.csproj",
-      "packagesPath": "C:\\Users\\Christiaan Bakker\\.nuget\\packages\\",
-      "outputPath": "D:\\NHL HBO ICT\\Jaar 1\\Project Domotica B\\Project b Laatste week\\De Verstrooide Student\\obj\\",
+      "projectPath": "C:\\Users\\Kevin\\Desktop\\School\\Periode 4\\Project Domotica\\De Verstrooide Student\\De Verstrooide Student\\De Verstrooide Student.csproj",
+      "packagesPath": "C:\\Users\\Kevin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kevin\\Desktop\\School\\Periode 4\\Project Domotica\\De Verstrooide Student\\De Verstrooide Student\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Christiaan Bakker\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"

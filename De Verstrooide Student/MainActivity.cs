@@ -19,8 +19,9 @@ namespace De_Verstrooide_Student
     {
         TextView msgText;
         const string TAG = "MainActivity";
-        Intent intent;
+        string status = "";
         string click_action = "";
+        Intent intent;
         Intent intent2;
 
 
@@ -44,35 +45,44 @@ namespace De_Verstrooide_Student
                     {
                         click_action = value;
                     }
+                    else if (key == "status")
+                    {
+                        status = value;
+                    }
                 }
                 if (click_action.Equals("Kliko"))
                 {
                     intent = new Intent(this, typeof(Kliko));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
                 else if (click_action.Equals("Koelkast"))
                 {
                     intent = new Intent(this, typeof(Koelkast));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
                 else if (click_action.Equals("Ventilator"))
                 {
                     intent = new Intent(this, typeof(Ventilator));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
                 else if(click_action.Equals("Wasmand"))
                 {
                     intent = new Intent(this, typeof(Wasmand));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
                 else if(click_action.Equals("KoffieZetApparaat"))
                 {
                     intent = new Intent(this, typeof(KoffieZetApparaat));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
             }

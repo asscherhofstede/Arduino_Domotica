@@ -17,16 +17,46 @@ namespace De_Verstrooide_Student
     public class Wasmand : AppCompatActivity
     {
         Intent intent2;
+        TextView wasmand;
+
+        string statusWasmand;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.Ventilator);
+            SetContentView(Resource.Layout.Wasmand);
+            wasmand = FindViewById<TextView>(Resource.Id.wasmand_status);
+
+            //als je data stuurt(status van sensor) dan ontvangt hij het als intent.extras
+            if (Intent.Extras != null)
+            {
+                foreach (var key in Intent.Extras.KeySet())
+                {
+                    var value = Intent.Extras.GetString(key);
+                    if (key == "status")
+                    {
+                        statusWasmand = value;
+                    }
+                }
+            }
 
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
+
+
+            if (statusWasmand == "0")
+            {
+                //foto van je kliko nog bij huis
+                Persistence.wasmandStatus = "Zet de kliko aan de weg!";
+            }
+            else if (statusWasmand == "1")
+            {
+                //foto van kliko aan de straat
+                Persistence.wasmandStatus = "De kliko is aan de weg!";
+            }
+            wasmand.Text = Persistence.wasmandStatus;
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {

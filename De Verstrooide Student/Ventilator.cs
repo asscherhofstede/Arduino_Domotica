@@ -16,18 +16,49 @@ namespace De_Verstrooide_Student
     [Activity(Label = "Ventilator")]
     public class Ventilator : AppCompatActivity
     {
+        TextView ventilator;
         Intent intent2;
+
+        string statusVentilator;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             SetContentView(Resource.Layout.Ventilator);
+            ventilator = FindViewById<TextView>(Resource.Id.ventilator_status);
+
+            if (Intent.Extras != null)
+            {
+                foreach (var key in Intent.Extras.KeySet())
+                {
+                    var value = Intent.Extras.GetString(key);
+                    if (key == "status")
+                    {
+                        statusVentilator = value;
+                    }
+                }
+            }
 
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
+
+            if (statusVentilator == "0")
+            {
+                //foto van je kliko nog bij huis
+                Persistence.ventilatorStatus = "Ventilator uit";
+            }
+            else if (statusVentilator == "1")
+            {
+                //foto van kliko aan de straat
+                Persistence.ventilatorStatus = "Ventilator aan";
+            }
+            ventilator.Text = Persistence.ventilatorStatus;
         }
+
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.toolbar_menu, menu);

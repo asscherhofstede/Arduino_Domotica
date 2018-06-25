@@ -2465,8 +2465,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b003f
 			public const int SYM = 2131427391;
 			
-			// aapt resource value: 0x7f0b00a8
-			public const int action0 = 2131427496;
+			// aapt resource value: 0x7f0b00aa
+			public const int action0 = 2131427498;
 			
 			// aapt resource value: 0x7f0b0083
 			public const int action_bar = 2131427459;
@@ -2489,17 +2489,17 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0061
 			public const int action_bar_title = 2131427425;
 			
-			// aapt resource value: 0x7f0b00a5
-			public const int action_container = 2131427493;
+			// aapt resource value: 0x7f0b00a7
+			public const int action_container = 2131427495;
 			
 			// aapt resource value: 0x7f0b0084
 			public const int action_context_bar = 2131427460;
 			
-			// aapt resource value: 0x7f0b00ac
-			public const int action_divider = 2131427500;
+			// aapt resource value: 0x7f0b00ae
+			public const int action_divider = 2131427502;
 			
-			// aapt resource value: 0x7f0b00a6
-			public const int action_image = 2131427494;
+			// aapt resource value: 0x7f0b00a8
+			public const int action_image = 2131427496;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -2516,11 +2516,11 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0063
 			public const int action_mode_close_button = 2131427427;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int action_text = 2131427495;
+			// aapt resource value: 0x7f0b00a9
+			public const int action_text = 2131427497;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int actions = 2131427509;
+			// aapt resource value: 0x7f0b00b7
+			public const int actions = 2131427511;
 			
 			// aapt resource value: 0x7f0b0064
 			public const int activity_chooser_view_content = 2131427428;
@@ -2558,14 +2558,11 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0045
 			public const int bottom = 2131427397;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int button1 = 2131427492;
-			
 			// aapt resource value: 0x7f0b006a
 			public const int buttonPanel = 2131427434;
 			
-			// aapt resource value: 0x7f0b00a9
-			public const int cancel_action = 2131427497;
+			// aapt resource value: 0x7f0b00ab
+			public const int cancel_action = 2131427499;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int center = 2131427404;
@@ -2579,8 +2576,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b007a
 			public const int checkbox = 2131427450;
 			
-			// aapt resource value: 0x7f0b00b1
-			public const int chronometer = 2131427505;
+			// aapt resource value: 0x7f0b00b3
+			public const int chronometer = 2131427507;
 			
 			// aapt resource value: 0x7f0b0055
 			public const int clip_horizontal = 2131427413;
@@ -2639,8 +2636,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0038
 			public const int end = 2131427384;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int end_padder = 2131427511;
+			// aapt resource value: 0x7f0b00b9
+			public const int end_padder = 2131427513;
 			
 			// aapt resource value: 0x7f0b0047
 			public const int enterAlways = 2131427399;
@@ -2684,8 +2681,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0069
 			public const int icon = 2131427433;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int icon_group = 2131427510;
+			// aapt resource value: 0x7f0b00b8
+			public const int icon_group = 2131427512;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int icon_only = 2131427360;
@@ -2696,14 +2693,23 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0066
 			public const int image = 2131427430;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int info = 2131427506;
+			// aapt resource value: 0x7f0b00b4
+			public const int info = 2131427508;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int italic = 2131427424;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int item_touch_helper_previous_elevation = 2131427328;
+			
+			// aapt resource value: 0x7f0b00a4
+			public const int kliko_status = 2131427492;
+			
+			// aapt resource value: 0x7f0b00a5
+			public const int koelkast_status = 2131427493;
+			
+			// aapt resource value: 0x7f0b00a6
+			public const int koffieZetApparaat_status = 2131427494;
 			
 			// aapt resource value: 0x7f0b0097
 			public const int largeLabel = 2131427479;
@@ -2729,29 +2735,29 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0094
 			public const int logTokenButton = 2131427476;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int masked = 2131427514;
+			// aapt resource value: 0x7f0b00be
+			public const int masked = 2131427518;
 			
-			// aapt resource value: 0x7f0b00ab
-			public const int media_actions = 2131427499;
-			
-			// aapt resource value: 0x7f0b00bb
-			public const int menu_Home = 2131427515;
-			
-			// aapt resource value: 0x7f0b00bd
-			public const int menu_Kliko = 2131427517;
-			
-			// aapt resource value: 0x7f0b00bc
-			public const int menu_Koelkast = 2131427516;
+			// aapt resource value: 0x7f0b00ad
+			public const int media_actions = 2131427501;
 			
 			// aapt resource value: 0x7f0b00bf
-			public const int menu_Ventilator = 2131427519;
+			public const int menu_Home = 2131427519;
 			
-			// aapt resource value: 0x7f0b00be
-			public const int menu_Wasmand = 2131427518;
+			// aapt resource value: 0x7f0b00c1
+			public const int menu_Kliko = 2131427521;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int message = 2131427512;
+			// aapt resource value: 0x7f0b00c0
+			public const int menu_Koelkast = 2131427520;
+			
+			// aapt resource value: 0x7f0b00c3
+			public const int menu_Ventilator = 2131427523;
+			
+			// aapt resource value: 0x7f0b00c2
+			public const int menu_Wasmand = 2131427522;
+			
+			// aapt resource value: 0x7f0b00ba
+			public const int message = 2131427514;
 			
 			// aapt resource value: 0x7f0b0039
 			public const int middle = 2131427385;
@@ -2777,14 +2783,14 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0027
 			public const int normal = 2131427367;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int notification_background = 2131427508;
+			// aapt resource value: 0x7f0b00b6
+			public const int notification_background = 2131427510;
 			
-			// aapt resource value: 0x7f0b00ae
-			public const int notification_main_column = 2131427502;
+			// aapt resource value: 0x7f0b00b0
+			public const int notification_main_column = 2131427504;
 			
-			// aapt resource value: 0x7f0b00ad
-			public const int notification_main_column_container = 2131427501;
+			// aapt resource value: 0x7f0b00af
+			public const int notification_main_column_container = 2131427503;
 			
 			// aapt resource value: 0x7f0b0053
 			public const int parallax = 2131427411;
@@ -2810,11 +2816,11 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0051
 			public const int right = 2131427409;
 			
-			// aapt resource value: 0x7f0b00b3
-			public const int right_icon = 2131427507;
+			// aapt resource value: 0x7f0b00b5
+			public const int right_icon = 2131427509;
 			
-			// aapt resource value: 0x7f0b00af
-			public const int right_side = 2131427503;
+			// aapt resource value: 0x7f0b00b1
+			public const int right_side = 2131427505;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int save_image_matrix = 2131427340;
@@ -2921,8 +2927,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0052
 			public const int start = 2131427410;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int status_bar_latest_event_content = 2131427498;
+			// aapt resource value: 0x7f0b00ac
+			public const int status_bar_latest_event_content = 2131427500;
 			
 			// aapt resource value: 0x7f0b007d
 			public const int submenuarrow = 2131427453;
@@ -2960,8 +2966,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0015
 			public const int textinput_error = 2131427349;
 			
-			// aapt resource value: 0x7f0b00b0
-			public const int time = 2131427504;
+			// aapt resource value: 0x7f0b00b2
+			public const int time = 2131427506;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int title = 2131427356;
@@ -3008,11 +3014,17 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b002e
 			public const int useLogo = 2131427374;
 			
+			// aapt resource value: 0x7f0b00bb
+			public const int ventilator_status = 2131427515;
+			
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00b9
-			public const int visible = 2131427513;
+			// aapt resource value: 0x7f0b00bd
+			public const int visible = 2131427517;
+			
+			// aapt resource value: 0x7f0b00bc
+			public const int wasmand_status = 2131427516;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int wide = 2131427362;

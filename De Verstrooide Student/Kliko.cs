@@ -8,6 +8,7 @@ using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 
@@ -17,17 +18,48 @@ namespace De_Verstrooide_Student
     public class Kliko : AppCompatActivity
     {
         Intent intent2;
+        TextView kliko;
+        string statusKliko;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             SetContentView(Resource.Layout.Kliko);
+            kliko = FindViewById<TextView>(Resource.Id.kliko_status);
+
+            //als je data stuurt(status van sensor) dan ontvangt hij het als intent.extras
+            if (Intent.Extras != null)
+            {
+                foreach (var key in Intent.Extras.KeySet())
+                {
+                    var value = Intent.Extras.GetString(key);
+                    if (key == "status")
+                    {
+                        statusKliko = value;
+                    }
+                }
+            }
 
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
+
+
+            if (statusKliko == "0")
+            {
+                //foto van je kliko nog bij huis
+                Persistence.klikoStatus = "Zet de kliko aan de weg!";
+            }
+            else if (statusKliko == "1")
+            {
+                //foto van kliko aan de straat
+                Persistence.klikoStatus = "De kliko is aan de weg!";
+            }
+            kliko.Text = Persistence.klikoStatus;
         }
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.toolbar_menu, menu);

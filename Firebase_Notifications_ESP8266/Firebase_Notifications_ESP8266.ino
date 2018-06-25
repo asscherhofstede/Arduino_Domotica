@@ -36,13 +36,17 @@ void loop() {
     //Kliko
     if(input == 'a')
     {
-      SendDataToFirebase("De Verstrooide Student", "Zet je kliko buiten", "Kliko");//Goed opletten met de hoofdletters voor de activity
+      SendDataToFirebase("De Verstrooide Student", "Zet je kliko buiten", "Kliko");
+      SendDataToFirebase("De Verstrooide Student", "Kliko: 0", "");
+    }
+    else if (input == 'b'){
+      SendDataToFirebase("De Verstrooide Student", "Kliko: 1", "");
     }
     //Koelkast
-    else if(input == 'b')
-    {
-      SendDataToFirebase("De Verstrooide Student", "Koelkast staat open!! ", "Koelkast");
-    }
+    //else if(input == 'b')
+    //{
+    //  SendDataToFirebase("De Verstrooide Student", "Koelkast staat open!! ", "Koelkast");
+    //}
     //Ventilator
     else if(input == 'c')
     {
@@ -62,7 +66,7 @@ void loop() {
   delay(250);
 }
 
-void SendDataToFirebase(String title, String msg, String activity) {
+void SendDataToFirebase(String title, String msg, String activity, String stat) {
   //more info @ https://firebase.google.com/docs/cloud-messaging/http-server-ref
 
   String data = "{";
@@ -73,7 +77,8 @@ void SendDataToFirebase(String title, String msg, String activity) {
   data = data + "\"sound\" : \"default\" ";
   data = data + "}, ";
   data = data + "\"data\": {";
-  data = data + "\"click_action\": \"" + activity + "\" ";
+  data = data + "\"click_action\": \"" + activity + "\",";
+  data = data + "\"status\" : \"" + stat + "\" "; 
   data = data + "} }";
   
   http.begin("http://fcm.googleapis.com/fcm/send");

@@ -16,18 +16,53 @@ namespace De_Verstrooide_Student
     [Activity(Label = "Koelkast")]
     public class Koelkast : AppCompatActivity
     {
+        TextView koelkast;
         Intent intent2;
+
+        string statusKoelkast;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
            
             // Create your application here
             SetContentView(Resource.Layout.Koelkast);
+            koelkast = FindViewById<TextView>(Resource.Id.koelkast_status);
+
+            if (Intent.Extras != null)
+            {
+                foreach (var key in Intent.Extras.KeySet())
+                {
+                    var value = Intent.Extras.GetString(key);
+                    if (key == "status")
+                    {
+                        statusKoelkast = value;
+                    }
+                }
+            }
 
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
+
+            if (statusKoelkast == "0")
+            {
+                //foto van je kliko nog bij huis
+                Persistence.koelkastStatus = "Zet de kliko aan de weg!";
+            }
+            else if (statusKoelkast == "1")
+            {
+                //foto van kliko aan de straat
+                Persistence.koelkastStatus = "De kliko is aan de weg!";
+            }
+            koelkast.Text = Persistence.koelkastStatus;
         }
+
+
+
+
+
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.toolbar_menu, menu);
