@@ -652,20 +652,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asscher\\.nuget\\packages\\": {}
+    "C:\\Users\\RBakk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programmeren\\arduinomap\\De Verstrooide Student\\De Verstrooide Student.csproj",
+      "projectUniqueName": "C:\\Users\\RBakk\\Desktop\\Github\\Domotica\\De Verstrooide Student\\De Verstrooide Student.csproj",
       "projectName": "De Verstrooide Student",
-      "projectPath": "D:\\programmeren\\arduinomap\\De Verstrooide Student\\De Verstrooide Student.csproj",
-      "packagesPath": "C:\\Users\\Asscher\\.nuget\\packages\\",
-      "outputPath": "D:\\programmeren\\arduinomap\\De Verstrooide Student\\obj\\",
+      "projectPath": "C:\\Users\\RBakk\\Desktop\\Github\\Domotica\\De Verstrooide Student\\De Verstrooide Student.csproj",
+      "packagesPath": "C:\\Users\\RBakk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RBakk\\Desktop\\Github\\Domotica\\De Verstrooide Student\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Asscher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RBakk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

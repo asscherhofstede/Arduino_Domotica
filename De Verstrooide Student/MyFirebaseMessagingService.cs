@@ -19,7 +19,7 @@ namespace De_Verstrooide_Student
             string title = "";
             string body = "";
             string click_action = "";
-
+            bool sensorStatus = false;
             Log.Debug(TAG, "From: " + message.From);
             //Log.Debug(TAG, "Notification Message Body: " + message.GetNotification().Body);
             
