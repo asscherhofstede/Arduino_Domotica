@@ -22,6 +22,7 @@ namespace De_Verstrooide_Student
 
             // Create your application here
             SetContentView(Resource.Layout.Wasmand);
+
         }
     }
 }
