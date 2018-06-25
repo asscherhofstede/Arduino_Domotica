@@ -93,7 +93,7 @@ namespace De_Verstrooide_Student
                                             .SetContentTitle(title)
                                             .SetContentText(body)
                                             .SetAutoCancel(true)
-                                            .SetSmallIcon(Resource.Drawable.ic_stat_ic_notification)
+                                            .SetSmallIcon(Resource.Drawable.Icon)
                                             .SetDefaults(NotificationDefaults.All)
                                             .SetContentIntent(pendingIntent)
                                             .Build();
@@ -125,7 +125,7 @@ namespace De_Verstrooide_Student
                                             .SetContentTitle(title)
                                             .SetContentText(body)
                                             .SetAutoCancel(true)
-                                            .SetSmallIcon(Resource.Drawable.ic_stat_ic_notification)
+                                            .SetSmallIcon(Resource.Drawable.Icon)
                                             .SetContentIntent(pendingIntent)
                                             .Build();
             }

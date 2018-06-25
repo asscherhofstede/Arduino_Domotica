@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>21-6-2018 16:00:40</xs:documentation>
+    <xs:documentation>25-6-2018 13:02:38</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -585,7 +585,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -1137,7 +1138,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -1786,7 +1788,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -2361,7 +2364,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -2916,7 +2920,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -3468,7 +3473,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -4356,7 +4362,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -4908,7 +4915,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -5557,7 +5565,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -6541,7 +6550,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -7093,7 +7103,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -8685,7 +8696,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -9295,7 +9307,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -9847,7 +9860,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -10399,7 +10413,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -10951,7 +10966,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -11545,7 +11561,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -12097,7 +12114,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -12733,7 +12751,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -13534,7 +13553,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -14157,7 +14177,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -14903,7 +14924,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -15649,7 +15671,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -16201,7 +16224,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -17391,7 +17415,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -18040,7 +18065,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -18689,7 +18715,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -19702,7 +19729,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -20587,7 +20615,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -21446,7 +21475,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -21998,7 +22028,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -22721,7 +22752,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -23467,7 +23499,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -24031,7 +24064,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -24777,7 +24811,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -25719,7 +25754,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -26271,7 +26307,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -28996,7 +29033,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -31374,7 +31412,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -32120,7 +32159,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -32672,7 +32712,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -33479,7 +33520,8 @@
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/googleg_disabled_color_18" />
             <xs:enumeration value="@drawable/googleg_standard_color_18" />
-            <xs:enumeration value="@drawable/ic_stat_ic_notification" />
+            <xs:enumeration value="@drawable/ic_info_outline_white_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
