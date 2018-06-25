@@ -657,11 +657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\arduinomap\\De Verstrooide Student\\De Verstrooide Student.csproj",
+      "projectUniqueName": "D:\\programmeren\\arduinomap\\De Verstrooide Student\\De Verstrooide Student.csproj",
       "projectName": "De Verstrooide Student",
-      "projectPath": "D:\\arduinomap\\De Verstrooide Student\\De Verstrooide Student.csproj",
+      "projectPath": "D:\\programmeren\\arduinomap\\De Verstrooide Student\\De Verstrooide Student.csproj",
       "packagesPath": "C:\\Users\\Asscher\\.nuget\\packages\\",
-      "outputPath": "D:\\arduinomap\\De Verstrooide Student\\obj\\",
+      "outputPath": "D:\\programmeren\\arduinomap\\De Verstrooide Student\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

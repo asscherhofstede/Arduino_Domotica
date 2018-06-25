@@ -58,6 +58,10 @@ void loop() {
     {
       SendDataToFirebase("De Verstrooide Student", "Koffie gaat aan!! ", "KoffieZetApparaat");
     }
+    else if(input == 'f')
+    {
+      SendDataToFirebase("De Verstrooide Student", "Koffie gaat uit!! ", "KoffieZetApparaat");
+    }
   }  
   delay(250);
 }

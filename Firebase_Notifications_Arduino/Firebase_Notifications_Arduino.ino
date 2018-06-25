@@ -225,11 +225,13 @@ void KoffieZetApparaat(){
   {
     Serial.println("Koffie gaat aan");
      pa3Transmitter.sendUnit(1, 1); 
+     Arduino.print('e')
    
   } 
   else if ( hour() =< 10)
   {
-     apa3Transmitter.sendUnit(0, 1); 
+     apa3Transmitter.sendUnit(1, 0); 
+     Arduino.print('f');
   }
 
 }
