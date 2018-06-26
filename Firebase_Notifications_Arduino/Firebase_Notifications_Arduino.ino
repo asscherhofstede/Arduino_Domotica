@@ -157,17 +157,16 @@ void Ventilator(){
   Serial.print(temperatuur);
   Serial.print("°");  
   Serial.println("C");
-  if (temperatuur >= 27 && countVentilator >= 10)         //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
+  if (temperatuur >= 25 && countVentilator >= 10)         //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
   {
     if(!unit1)
           {
             countVentilator = 0;
             apa3Transmitter.sendUnit(0, 1);               //Unit1 gaat AAN
-            Arduino.print('c');                           //Geeft waarde 'AAN' naar ESP module
+            Arduino.print('d');                           //Geeft waarde 'AAN' naar ESP module
             unit1 = true;
                 Serial.println("Ventilator is aan!");
           }
-
   }
   else if (temperatuur < 27 && countVentilator >= 10)     //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
   {
@@ -175,7 +174,7 @@ void Ventilator(){
     {
       countVentilator = 0;
       apa3Transmitter.sendUnit(0, 0);                     //Unit1 gaat UIT
-      Arduino.print('f');                                 //Geeft waarde 'UIT' naar ESP module
+      Arduino.print('e');                                 //Geeft waarde 'UIT' naar ESP module
       unit1 = false;                                      
       Serial.println("Ventilator is uit!");
     }

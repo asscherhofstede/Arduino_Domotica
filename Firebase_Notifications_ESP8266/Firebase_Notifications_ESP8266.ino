@@ -42,30 +42,18 @@ void loop() {
     else if (input == 'b'){
       SendDataToFirebase("De Verstrooide Student", "Kliko: 1", "");
     }
-    //Koelkast
-    //else if(input == 'b')
-    //{
-    //  SendDataToFirebase("De Verstrooide Student", "Koelkast staat open!! ", "Koelkast");
-    //}
     //Ventilator
-    else if(input == 'c')
-    {
-      SendDataToFirebase("De Verstrooide Student", "Ventilator gaat aan!! ", "Ventilator");
-    }
-    //Wasmand
     else if(input == 'd')
     {
-      SendDataToFirebase("De Verstrooide Student", "De wasmand zit vol!! ", "Wasmand");
+      SendDataToFirebase("De Verstrooide Student", "Het is warm! De ventilator gaat aan.", "Ventilator");
+      SendDataToFirebase("De Verstrooide Student", "1", ""
     }
-    //KoffieZetApparaat
     else if(input == 'e')
     {
-      SendDataToFirebase("De Verstrooide Student", "Koffie gaat aan!! ", "KoffieZetApparaat");
+      SendDataToFirebase("De Verstrooide Student", "Het is koud! De ventilator gaat uit.", "Ventilator");
+      SendDataToFirebase("De Verstrooide Student", "0", "");
     }
-    else if(input == 'f')
-    {
-      SendDataToFirebase("De Verstrooide Student", "Koffie gaat uit!! ", "KoffieZetApparaat");
-    }
+    //
   }  
   delay(250);
 }
