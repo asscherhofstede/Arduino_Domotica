@@ -2968,62 +2968,62 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x1
 			public const int cast_skip_ad_label_border = 1;
 			
-			// aapt resource value: 0x7F010125
-			public const int common_full_open_on_phone = 2130772261;
-			
-			// aapt resource value: 0x7F010111
-			public const int common_google_signin_btn_icon_dark = 2130772241;
-			
-			// aapt resource value: 0x7F010112
-			public const int common_google_signin_btn_icon_dark_focused = 2130772242;
+			// aapt resource value: 0x7F010127
+			public const int common_full_open_on_phone = 2130772263;
 			
 			// aapt resource value: 0x7F010113
-			public const int common_google_signin_btn_icon_dark_normal = 2130772243;
-			
-			// aapt resource value: 0x7F010126
-			public const int common_google_signin_btn_icon_dark_normal_background = 2130772262;
+			public const int common_google_signin_btn_icon_dark = 2130772243;
 			
 			// aapt resource value: 0x7F010114
-			public const int common_google_signin_btn_icon_disabled = 2130772244;
+			public const int common_google_signin_btn_icon_dark_focused = 2130772244;
 			
 			// aapt resource value: 0x7F010115
-			public const int common_google_signin_btn_icon_light = 2130772245;
-			
-			// aapt resource value: 0x7F010116
-			public const int common_google_signin_btn_icon_light_focused = 2130772246;
-			
-			// aapt resource value: 0x7F010117
-			public const int common_google_signin_btn_icon_light_normal = 2130772247;
-			
-			// aapt resource value: 0x7F010127
-			public const int common_google_signin_btn_icon_light_normal_background = 2130772263;
-			
-			// aapt resource value: 0x7F010118
-			public const int common_google_signin_btn_text_dark = 2130772248;
-			
-			// aapt resource value: 0x7F010119
-			public const int common_google_signin_btn_text_dark_focused = 2130772249;
-			
-			// aapt resource value: 0x7F010120
-			public const int common_google_signin_btn_text_dark_normal = 2130772256;
+			public const int common_google_signin_btn_icon_dark_normal = 2130772245;
 			
 			// aapt resource value: 0x7F010128
-			public const int common_google_signin_btn_text_dark_normal_background = 2130772264;
+			public const int common_google_signin_btn_icon_dark_normal_background = 2130772264;
 			
-			// aapt resource value: 0x7F010121
-			public const int common_google_signin_btn_text_disabled = 2130772257;
+			// aapt resource value: 0x7F010116
+			public const int common_google_signin_btn_icon_disabled = 2130772246;
 			
-			// aapt resource value: 0x7F010122
-			public const int common_google_signin_btn_text_light = 2130772258;
+			// aapt resource value: 0x7F010117
+			public const int common_google_signin_btn_icon_light = 2130772247;
 			
-			// aapt resource value: 0x7F010123
-			public const int common_google_signin_btn_text_light_focused = 2130772259;
+			// aapt resource value: 0x7F010118
+			public const int common_google_signin_btn_icon_light_focused = 2130772248;
 			
-			// aapt resource value: 0x7F010124
-			public const int common_google_signin_btn_text_light_normal = 2130772260;
+			// aapt resource value: 0x7F010119
+			public const int common_google_signin_btn_icon_light_normal = 2130772249;
 			
 			// aapt resource value: 0x7F010129
-			public const int common_google_signin_btn_text_light_normal_background = 2130772265;
+			public const int common_google_signin_btn_icon_light_normal_background = 2130772265;
+			
+			// aapt resource value: 0x7F010120
+			public const int common_google_signin_btn_text_dark = 2130772256;
+			
+			// aapt resource value: 0x7F010121
+			public const int common_google_signin_btn_text_dark_focused = 2130772257;
+			
+			// aapt resource value: 0x7F010122
+			public const int common_google_signin_btn_text_dark_normal = 2130772258;
+			
+			// aapt resource value: 0x7F010130
+			public const int common_google_signin_btn_text_dark_normal_background = 2130772272;
+			
+			// aapt resource value: 0x7F010123
+			public const int common_google_signin_btn_text_disabled = 2130772259;
+			
+			// aapt resource value: 0x7F010124
+			public const int common_google_signin_btn_text_light = 2130772260;
+			
+			// aapt resource value: 0x7F010125
+			public const int common_google_signin_btn_text_light_focused = 2130772261;
+			
+			// aapt resource value: 0x7F010126
+			public const int common_google_signin_btn_text_light_normal = 2130772262;
+			
+			// aapt resource value: 0x7F010131
+			public const int common_google_signin_btn_text_light_normal_background = 2130772273;
 			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
@@ -3043,20 +3043,23 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010130
-			public const int googleg_disabled_color_18 = 2130772272;
+			// aapt resource value: 0x7F010132
+			public const int googleg_disabled_color_18 = 2130772274;
 			
-			// aapt resource value: 0x7F010131
-			public const int googleg_standard_color_18 = 2130772273;
+			// aapt resource value: 0x7F010133
+			public const int googleg_standard_color_18 = 2130772275;
 			
 			// aapt resource value: 0x7F010002
-			public const int hamburger = 2130771970;
+			public const int Green_Trash = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int Icon = 2130771971;
+			public const int hamburger = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int ic_info_outline_white_24dp = 2130771972;
+			public const int Icon = 2130771972;
+			
+			// aapt resource value: 0x7F010006
+			public const int ic_info_outline_white_24dp = 2130771974;
 			
 			// aapt resource value: 0x1
 			public const int ic_plusone_medium_off_client = 1;
@@ -3244,6 +3247,9 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x1
 			public const int quantum_ic_volume_up_white_36 = 1;
 			
+			// aapt resource value: 0x7F010005
+			public const int Red_Trash = 2130771973;
+			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
 			
@@ -3391,6 +3397,9 @@ namespace De_Verstrooide_Student
 			
 			// aapt resource value: 0x1
 			public const int button = 1;
+			
+			// aapt resource value: 0x7F020008
+			public const int button1 = 2130837512;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -3625,6 +3634,9 @@ namespace De_Verstrooide_Student
 			
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
+			
+			// aapt resource value: 0x7F020007
+			public const int imageView1 = 2130837511;
 			
 			// aapt resource value: 0x1
 			public const int index_entity_types = 1;
@@ -4021,6 +4033,9 @@ namespace De_Verstrooide_Student
 			
 			// aapt resource value: 0x1
 			public const int textTitle = 1;
+			
+			// aapt resource value: 0x7F020006
+			public const int textView1 = 2130837510;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
