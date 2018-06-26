@@ -3363,6 +3363,15 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f030003
 			public const int ic_stat_ic_notification = 2130903043;
 			
+			// aapt resource value: 0x7f030004
+			public const int MANDHalf = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int MANDLeeg = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int MANDVol = 2130903046;
+			
 			static Mipmap()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

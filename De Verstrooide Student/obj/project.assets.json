@@ -652,20 +652,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Kevin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Propedeuse ICT\\5. IoT\\Project\\DomoticaNieuw\\De Verstrooide Student\\De Verstrooide Student.csproj",
+      "projectUniqueName": "C:\\Users\\Kevin\\Desktop\\School\\Periode 4\\Project Domotica\\De Verstrooide Student\\De Verstrooide Student\\De Verstrooide Student.csproj",
       "projectName": "De Verstrooide Student",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Propedeuse ICT\\5. IoT\\Project\\DomoticaNieuw\\De Verstrooide Student\\De Verstrooide Student.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Propedeuse ICT\\5. IoT\\Project\\DomoticaNieuw\\De Verstrooide Student\\obj\\",
+      "projectPath": "C:\\Users\\Kevin\\Desktop\\School\\Periode 4\\Project Domotica\\De Verstrooide Student\\De Verstrooide Student\\De Verstrooide Student.csproj",
+      "packagesPath": "C:\\Users\\Kevin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kevin\\Desktop\\School\\Periode 4\\Project Domotica\\De Verstrooide Student\\De Verstrooide Student\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

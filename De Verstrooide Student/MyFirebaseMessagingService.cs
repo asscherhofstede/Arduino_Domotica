@@ -15,14 +15,15 @@ namespace De_Verstrooide_Student
     {
         const string TAG = "MyFirebaseMsgService";
         string status = "";
+        string title = "";
+        string body = "";
+        string click_action = "";
+        string[] array = new string[] {"Kliko", "Koelkast", "KoffieZetApparaat", "Ventilator", "Wasmand"};
+
         Intent intent;
 
         public override void OnMessageReceived(RemoteMessage message)
         {
-            string title = "";
-            string body = "";
-            string click_action = "";
-            bool sensorStatus = false;
             Log.Debug(TAG, "From: " + message.From);
             
             if(message.GetNotification() != null)
@@ -52,6 +53,30 @@ namespace De_Verstrooide_Student
             if (title != "" && body != "" && click_action != "")
             {
                 SendNotification(title, body, click_action);
+            }
+            else if (status != "")
+            {
+                //check welke body hij mee stuurt.
+                if (body.Contains("Kliko"))
+                {
+                    Persistence.klikoValue = status;
+                }
+                else if (body.Contains("Koelkast"))
+                {
+                    Persistence.koelkastValue = status;
+                }
+                else if (body.Contains("KoffieZetApparaat"))
+                {
+                    Persistence.koffieZetApparaatValue = status;
+                }
+                else if (body.Contains("Ventilator"))
+                {
+                    Persistence.ventilatorValue = status;
+                }
+                else if (body.Contains("Wasmand"))
+                {
+                    Persistence.wasmandValue = status;
+                }
             }
         }
 

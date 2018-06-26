@@ -4464,17 +4464,26 @@ namespace De_Verstrooide_Student
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F050003
-			public const int ic_launcher = 2131034115;
+			// aapt resource value: 0x7F050006
+			public const int ic_launcher = 2131034118;
 			
-			// aapt resource value: 0x7F050005
-			public const int ic_launcher_foreground = 2131034117;
+			// aapt resource value: 0x7F050008
+			public const int ic_launcher_foreground = 2131034120;
 			
-			// aapt resource value: 0x7F050004
-			public const int ic_launcher_round = 2131034116;
+			// aapt resource value: 0x7F050007
+			public const int ic_launcher_round = 2131034119;
 			
 			// aapt resource value: 0x7F050002
 			public const int ic_stat_ic_notification = 2131034114;
+			
+			// aapt resource value: 0x7F050003
+			public const int MANDHalf = 2131034115;
+			
+			// aapt resource value: 0x7F050004
+			public const int MANDLeeg = 2131034116;
+			
+			// aapt resource value: 0x7F050005
+			public const int MANDVol = 2131034117;
 			
 			static Mipmap()
 			{

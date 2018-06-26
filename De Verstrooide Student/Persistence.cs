@@ -15,10 +15,18 @@ namespace De_Verstrooide_Student
     class Persistence
     {
         public static string klikoStatus { get; set; }
-        public static string koelkastStatus { get; set; }
-        public static string koffieZetApparaatStatus { get; set; }
-        public static string ventilatorStatus { get; set; }
-        public static string wasmandStatus { get; set; }
+        public static string klikoValue { get; set; }
 
+        public static string koelkastStatus { get; set; }
+        public static string koelkastValue { get; set; }
+
+        public static string koffieZetApparaatStatus { get; set; }
+        public static string koffieZetApparaatValue { get; set; }
+
+        public static string ventilatorStatus { get; set; }
+        public static string ventilatorValue { get; set; }
+
+        public static string wasmandStatus { get; set; }
+        public static string wasmandValue { get; set; }
     }
 }

@@ -48,12 +48,10 @@ namespace De_Verstrooide_Student
 
             if (statusWasmand == "0")
             {
-                //foto van je kliko nog bij huis
                 Persistence.wasmandStatus = "Zet de kliko aan de weg!";
             }
             else if (statusWasmand == "1")
             {
-                //foto van kliko aan de straat
                 Persistence.wasmandStatus = "De kliko is aan de weg!";
             }
             wasmand.Text = Persistence.wasmandStatus;

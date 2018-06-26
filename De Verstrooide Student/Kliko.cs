@@ -37,7 +37,7 @@ namespace De_Verstrooide_Student
                     var value = Intent.Extras.GetString(key);
                     if (key == "status")
                     {
-                        statusKliko = value;
+                        Persistence.klikoValue = value;
                     }
                 }
             }
@@ -47,12 +47,12 @@ namespace De_Verstrooide_Student
             SupportActionBar.Title = "De Verstrooide Student";
 
 
-            if (statusKliko == "0")
+            if (Persistence.klikoValue == "0")
             {
                 //foto van je kliko nog bij huis
                 Persistence.klikoStatus = "Zet de kliko aan de weg!";
             }
-            else if (statusKliko == "1")
+            else if (Persistence.klikoValue == "1")
             {
                 //foto van kliko aan de straat
                 Persistence.klikoStatus = "De kliko is aan de weg!";
