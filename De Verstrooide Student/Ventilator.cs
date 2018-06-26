@@ -16,7 +16,7 @@ namespace De_Verstrooide_Student
     [Activity(Label = "Ventilator")]
     public class Ventilator : AppCompatActivity
     {
-        TextView ventilator;
+        TextView ventilatorStatus, ventilatorSensor;
         Intent intent2;
 
         string statusVentilator;
@@ -27,7 +27,8 @@ namespace De_Verstrooide_Student
 
             // Create your application here
             SetContentView(Resource.Layout.Ventilator);
-            ventilator = FindViewById<TextView>(Resource.Id.ventilator_status);
+            ventilatorStatus = FindViewById<TextView>(Resource.Id.ventilator_status);
+            ventilatorSensor = FindViewById<TextView>(Resource.Id.tempOutputView);
 
             if (Intent.Extras != null)
             {
@@ -47,15 +48,16 @@ namespace De_Verstrooide_Student
 
             if (statusVentilator == "0")
             {
-                //foto van je kliko nog bij huis
-                Persistence.ventilatorStatus = "Ventilator uit";
+                Persistence.ventilatorStatus = "Ventilator is uit";
+                Persistence.ventilatorSensor = "Temperatuur is onder 20 Graden Celsius";
             }
             else if (statusVentilator == "1")
             {
-                //foto van kliko aan de straat
-                Persistence.ventilatorStatus = "Ventilator aan";
+                Persistence.ventilatorStatus = "Ventilator is aan";
+                Persistence.ventilatorSensor = "Temperatuur is boven de 20 Graden Celsius";
             }
-            ventilator.Text = Persistence.ventilatorStatus;
+            ventilatorStatus.text = persistance.ventilatorSensor;
+            ventilatorStatus.Text = Persistence.ventilatorStatus;
         }
 
 

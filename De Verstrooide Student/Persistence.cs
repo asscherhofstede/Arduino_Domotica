@@ -18,7 +18,7 @@ namespace De_Verstrooide_Student
         public static string koelkastStatus { get; set; }
         public static string koffieZetApparaatStatus { get; set; }
         public static string ventilatorStatus { get; set; }
+        public static string ventilatorSensor { get; set; }
         public static string wasmandStatus { get; set; }
-
     }
 }

@@ -157,7 +157,7 @@ void Ventilator(){
   Serial.print(temperatuur);
   Serial.print("°");  
   Serial.println("C");
-  if (temperatuur >= 25 && countVentilator >= 10)         //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
+  if (temperatuur >= 20 && countVentilator >= 10)         //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
   {
     if(!unit1)
           {
@@ -168,7 +168,7 @@ void Ventilator(){
                 Serial.println("Ventilator is aan!");
           }
   }
-  else if (temperatuur < 27 && countVentilator >= 10)     //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
+  else if (temperatuur < 20 && countVentilator >= 10)     //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
   {
     if(unit1) 
     {
