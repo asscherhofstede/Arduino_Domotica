@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>26-6-2018 13:09:12</xs:documentation>
+    <xs:documentation>26-6-2018 17:32:15</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -609,6 +609,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1165,6 +1168,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1818,6 +1824,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2397,6 +2406,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2956,6 +2968,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3512,6 +3527,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4404,6 +4422,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4960,6 +4981,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5613,6 +5637,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6601,6 +6628,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7157,6 +7187,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8753,6 +8786,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9367,6 +9403,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9923,6 +9962,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10479,6 +10521,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11035,6 +11080,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11633,6 +11681,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12189,6 +12240,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12829,6 +12883,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13634,6 +13691,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -14261,6 +14321,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15011,6 +15074,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15761,6 +15827,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16317,6 +16386,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17511,6 +17583,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18164,6 +18239,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18817,6 +18895,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19834,6 +19915,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20723,6 +20807,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_up_description" />
             <xs:enumeration value="@string/abc_action_menu_overflow_description" />
@@ -21586,6 +21673,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22142,6 +22232,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22869,6 +22962,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23619,6 +23715,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24187,6 +24286,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24937,6 +25039,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25883,6 +25988,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26439,6 +26547,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29168,6 +29279,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31550,6 +31664,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32300,6 +32417,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32856,6 +32976,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33667,6 +33790,9 @@
             <xs:enumeration value="@mipmap/ic_launcher_foreground" />
             <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@mipmap/ic_stat_ic_notification" />
+            <xs:enumeration value="@mipmap/mandhalf" />
+            <xs:enumeration value="@mipmap/mandleeg" />
+            <xs:enumeration value="@mipmap/mandvol" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
