@@ -20,9 +20,7 @@
         android:textAlignment="center"
         android:inputType="none" />
     <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView1"
-        android:background="@drawable/red_trash" />
+        android:id="@+id/imageView1" />
 </LinearLayout>

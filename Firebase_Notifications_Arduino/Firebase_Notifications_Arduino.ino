@@ -105,16 +105,18 @@ void Kliko(){
       Serial.println(" minuut/minuten weg");
     }
     countKliko++;
+    Arduino.print('l'); 
   }
   else {
    countKliko = 0;
    Serial.println("Kliko staat op zijn plek :D");
+   Arduino.print('k');
   }
   
   if(countKliko == 5 && weekday() == 2 && hour() >= 9)
   {
     Serial.println("Zet de kliko aan de weg!");
-    Arduino.print('a'); 
+    Arduino.print('j'); 
   } 
  
 }

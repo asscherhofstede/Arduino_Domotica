@@ -29,7 +29,7 @@
         android:textColor="#ffffff"
         android:padding="10dp"
         android:textSize="20sp"
-        android:id="@+id/textView5" />
+        android:id="@+id/ventilator_status" />
     <TextView
         android:text="0"
         android:layout_width="match_parent"
