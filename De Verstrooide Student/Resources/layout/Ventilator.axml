@@ -20,7 +20,7 @@
         android:gravity="center"
         android:textColor="#000000"
         android:padding="10dp"
-        android:id="@+id/textView3" />
+        android:id="@+id/ventilator_status" />
     <TextView
         android:text="Status:"
         android:textAppearance="?android:attr/textAppearanceMedium"
