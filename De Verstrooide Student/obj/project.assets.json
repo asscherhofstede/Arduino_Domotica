@@ -652,7 +652,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asscher\\.nuget\\packages\\": {}
+    "C:\\Users\\Kevin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -665,7 +665,7 @@
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Asscher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

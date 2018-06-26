@@ -9,6 +9,8 @@ using Android.Util;
 using System;
 using Android.Content;
 using System.Collections.Generic;
+using Android.Support.V7.Widget;
+using Android.Views;
 
 namespace De_Verstrooide_Student
 {
@@ -17,14 +19,20 @@ namespace De_Verstrooide_Student
     {
         TextView msgText;
         const string TAG = "MainActivity";
-        Intent intent;
+        string status = "";
         string click_action = "";
+        Intent intent;
+        Intent intent2;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = "De Verstrooide Student";
             msgText = FindViewById<TextView>(Resource.Id.msgText);
 
             if (Intent.Extras != null)
@@ -37,35 +45,44 @@ namespace De_Verstrooide_Student
                     {
                         click_action = value;
                     }
+                    else if (key == "status")
+                    {
+                        status = value;
+                    }
                 }
                 if (click_action.Equals("Kliko"))
                 {
                     intent = new Intent(this, typeof(Kliko));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
                 else if (click_action.Equals("Koelkast"))
                 {
                     intent = new Intent(this, typeof(Koelkast));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
                 else if (click_action.Equals("Ventilator"))
                 {
                     intent = new Intent(this, typeof(Ventilator));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
                 else if(click_action.Equals("Wasmand"))
                 {
                     intent = new Intent(this, typeof(Wasmand));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
                 else if(click_action.Equals("KoffieZetApparaat"))
                 {
                     intent = new Intent(this, typeof(KoffieZetApparaat));
                     intent.AddFlags(ActivityFlags.ClearTop);
+                    intent.PutExtra("status", status);
                     StartActivity(intent);
                 }
             }
@@ -108,6 +125,44 @@ namespace De_Verstrooide_Student
                 return true;
             }
         }
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.toolbar_menu, menu);
+            IMenuItem item = menu.FindItem(Resource.Id.menu_Home);
+            item.SetVisible(false);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.TitleFormatted.ToString() == "Koelkast")
+            {
+                intent2 = new Intent(this, typeof(Koelkast));
+                intent2.AddFlags(ActivityFlags.ClearTop);
+                StartActivity(intent2);
+            }
+            else if (item.TitleFormatted.ToString() == "Kliko")
+            {
+                intent2 = new Intent(this, typeof(Kliko));
+                intent2.AddFlags(ActivityFlags.ClearTop);
+                StartActivity(intent2);
+            }
+            else if (item.TitleFormatted.ToString() == "Wasmand")
+            {
+                intent2 = new Intent(this, typeof(Wasmand));
+                intent2.AddFlags(ActivityFlags.ClearTop);
+                StartActivity(intent2);
+            }
+            else if (item.TitleFormatted.ToString() == "Ventilator")
+            {
+                intent2 = new Intent(this, typeof(Ventilator));
+                intent2.AddFlags(ActivityFlags.ClearTop);
+                StartActivity(intent2);
+            }
+
+            return base.OnOptionsItemSelected(item);
+        }
+
     }
 }
 

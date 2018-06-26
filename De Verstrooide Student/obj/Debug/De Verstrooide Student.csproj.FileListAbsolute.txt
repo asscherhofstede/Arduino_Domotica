@@ -1,7 +1,3 @@
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.pdb
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\com.xamarin.verstrooide_student.apk
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\com.xamarin.verstrooide_student-Signed.apk
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\De Verstrooide Student.csprojAssemblyReference.cache
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Basement.dll.stamp
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Tasks.dll.stamp
@@ -18,6 +14,10 @@ C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\XbdMerge\04db0838.proguard.stamp
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\googsvcsjson\values\goog_svcs_json.xml
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\De Verstrooide Student.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\De Verstrooide Student.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\com.xamarin.verstrooide_student.apk
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\bin\Debug\com.xamarin.verstrooide_student-Signed.apk
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\De Verstrooide Student.dll
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\De Verstrooide Student.pdb
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\android\bin\com.xamarin.verstrooide_student.apk
@@ -50,12 +50,19 @@ C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\mipmap-xxxhdpi\ic_stat_ic_notification.png
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\mipmap-anydpi-v26\ic_stat_ic_notification.png
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\mipmap\ic_stat_ic_notification.png
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable\ic_stat_ic_notification.png
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\koelkast.xml
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\koffiezetapparaat.xml
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\ventilator.xml
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\wasmand.xml
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\layout\kliko.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\menu\toolbar_menu.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable-hdpi\ic_info_outline_white_24dp.png
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable\icon.png
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable-mdpi\ic_info_outline_white_24dp.png
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable-xhdpi\ic_info_outline_white_24dp.png
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable-xxhdpi\ic_info_outline_white_24dp.png
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable-xxxhdpi\ic_info_outline_white_24dp.png
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\res\drawable\hamburger.png
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\R.cs.flag
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\R.txt
 C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\De Verstrooide Student\De Verstrooide Student\obj\Debug\uploadflags.txt

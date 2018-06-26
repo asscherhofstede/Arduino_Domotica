@@ -4,6 +4,6 @@
     <SelectedDevice>Android_Accelerated_x86_Nougat</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86_Nougat</DefaultDevice>
     <ProjectView>ShowAllFiles</ProjectView>
-    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>pixel</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

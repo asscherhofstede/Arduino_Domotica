@@ -4,6 +4,7 @@ using Android.Media;
 using Android.Net;
 using Android.Util;
 using Firebase.Messaging;
+using System;
 using System.Collections.Generic;
 
 namespace De_Verstrooide_Student
@@ -13,6 +14,8 @@ namespace De_Verstrooide_Student
     public class MyFirebaseMessagingService : FirebaseMessagingService
     {
         const string TAG = "MyFirebaseMsgService";
+        string status = "";
+        Intent intent;
 
         public override void OnMessageReceived(RemoteMessage message)
         {
@@ -21,7 +24,6 @@ namespace De_Verstrooide_Student
             string click_action = "";
 
             Log.Debug(TAG, "From: " + message.From);
-            //Log.Debug(TAG, "Notification Message Body: " + message.GetNotification().Body);
             
             if(message.GetNotification() != null)
             {
@@ -40,8 +42,13 @@ namespace De_Verstrooide_Student
                     {
                         click_action = kvp.Value;
                     }
+                    else if (kvp.Key == "status")
+                    {
+                        status = kvp.Value;
+                    }
                 }
             }
+
             if (title != "" && body != "" && click_action != "")
             {
                 SendNotification(title, body, click_action);
@@ -49,32 +56,36 @@ namespace De_Verstrooide_Student
         }
 
         void SendNotification(string title, string body, string click_Action)
-        {
-            Intent intent;
+        {            
             if (click_Action.Equals("Kliko"))
             {
                 intent = new Intent(this, typeof(Kliko));
                 intent.AddFlags(ActivityFlags.ClearTop);
+                intent.PutExtra("status", status);
             }
             else if (click_Action.Equals("Koelkast"))
             {
                 intent = new Intent(this, typeof(Koelkast));
                 intent.AddFlags(ActivityFlags.ClearTop);
+                intent.PutExtra("status", status);
             }
             else if (click_Action.Equals("Ventilator"))
             {
                 intent = new Intent(this, typeof(Ventilator));
                 intent.AddFlags(ActivityFlags.ClearTop);
+                intent.PutExtra("status", status);
             }
             else if (click_Action.Equals("Wasmand"))
             {
                 intent = new Intent(this, typeof(Wasmand));
                 intent.AddFlags(ActivityFlags.ClearTop);
+                intent.PutExtra("status", status);
             }
             else if (click_Action.Equals("KoffieZetApparaat"))
             {
                 intent = new Intent(this, typeof(KoffieZetApparaat));
                 intent.AddFlags(ActivityFlags.ClearTop);
+                intent.PutExtra("status", status);
             }
             else
             {
@@ -93,7 +104,7 @@ namespace De_Verstrooide_Student
                                             .SetContentTitle(title)
                                             .SetContentText(body)
                                             .SetAutoCancel(true)
-                                            .SetSmallIcon(Resource.Drawable.ic_stat_ic_notification)
+                                            .SetSmallIcon(Resource.Drawable.Icon)
                                             .SetDefaults(NotificationDefaults.All)
                                             .SetContentIntent(pendingIntent)
                                             .Build();
@@ -125,24 +136,12 @@ namespace De_Verstrooide_Student
                                             .SetContentTitle(title)
                                             .SetContentText(body)
                                             .SetAutoCancel(true)
-                                            .SetSmallIcon(Resource.Drawable.ic_stat_ic_notification)
+                                            .SetSmallIcon(Resource.Drawable.Icon)
                                             .SetContentIntent(pendingIntent)
                                             .Build();
             }
             notificationManager.Notify(1331, notification);
             notification.Dispose();
-
-            //var notificationBuilder = new Notification.Builder(this)
-            //    .SetSmallIcon(Resource.Drawable.ic_stat_ic_notification)
-            //    .SetContentTitle(title)
-            //    .SetContentText(body)
-            //    .SetAutoCancel(true)
-            //    .SetColor(000)
-            //    .SetDefaults(NotificationDefaults)
-            //    //.SetSound()
-            //    .SetContentIntent(pendingIntent);
-
-            //notificationManager.Notify(0, notificationBuilder.Build());
         }
     }
 }
