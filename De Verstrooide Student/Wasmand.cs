@@ -26,6 +26,7 @@ namespace De_Verstrooide_Student
 
             // Create your application here
             SetContentView(Resource.Layout.Wasmand);
+<<<<<<< HEAD
             wasmand = FindViewById<TextView>(Resource.Id.wasmand_status);
 
             //als je data stuurt(status van sensor) dan ontvangt hij het als intent.extras
@@ -99,6 +100,9 @@ namespace De_Verstrooide_Student
                 
             
             return base.OnOptionsItemSelected(item);
+=======
+
+>>>>>>> jansarti
         }
     }
 }

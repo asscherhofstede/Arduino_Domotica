@@ -168,6 +168,7 @@
     <AndroidResource Include="Resources\layout\Kliko.axml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <AndroidResource Include="Resources\menu\toolbar_menu.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -196,6 +197,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Red_Trash.png" />
+=======
+    <AndroidResource Include="Resources\mipmap\MANDHalf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap\MANDLeeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap\MANDVol.png" />
+>>>>>>> jansarti
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
