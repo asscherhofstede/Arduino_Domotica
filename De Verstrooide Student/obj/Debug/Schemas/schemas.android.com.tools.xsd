@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>6/26/2018 2:34:08 PM</xs:documentation>
+    <xs:documentation>6/26/2018 3:25:48 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -38,6 +38,7 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/activity_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -52,6 +53,9 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/kliko" />
+            <xs:enumeration value="@layout/koelkast" />
+            <xs:enumeration value="@layout/koffiezetapparaat" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
             <xs:enumeration value="@layout/notification_media_action" />
@@ -72,6 +76,8 @@
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@layout/tooltip" />
+            <xs:enumeration value="@layout/ventilator" />
+            <xs:enumeration value="@layout/wasmand" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -135,6 +141,7 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/activity_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -149,6 +156,9 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/kliko" />
+            <xs:enumeration value="@layout/koelkast" />
+            <xs:enumeration value="@layout/koffiezetapparaat" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
             <xs:enumeration value="@layout/notification_media_action" />
@@ -169,6 +179,8 @@
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@layout/tooltip" />
+            <xs:enumeration value="@layout/ventilator" />
+            <xs:enumeration value="@layout/wasmand" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -232,6 +244,7 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/activity_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -246,6 +259,9 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/kliko" />
+            <xs:enumeration value="@layout/koelkast" />
+            <xs:enumeration value="@layout/koffiezetapparaat" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
             <xs:enumeration value="@layout/notification_media_action" />
@@ -266,6 +282,8 @@
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@layout/tooltip" />
+            <xs:enumeration value="@layout/ventilator" />
+            <xs:enumeration value="@layout/wasmand" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -329,6 +347,7 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/activity_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -343,6 +362,9 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/kliko" />
+            <xs:enumeration value="@layout/koelkast" />
+            <xs:enumeration value="@layout/koffiezetapparaat" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
             <xs:enumeration value="@layout/notification_media_action" />
@@ -363,6 +385,8 @@
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@layout/tooltip" />
+            <xs:enumeration value="@layout/ventilator" />
+            <xs:enumeration value="@layout/wasmand" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -387,6 +411,23 @@
             <xs:enumeration value="@android:layout/simple_spinner_item" />
             <xs:enumeration value="@android:layout/test_list_item" />
             <xs:enumeration value="@android:layout/two_line_list_item" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="openDrawer">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="end" />
+            <xs:enumeration value="left" />
+            <xs:enumeration value="right" />
+            <xs:enumeration value="start" />
           </xs:restriction>
         </xs:simpleType>
       </xs:union>
@@ -429,6 +470,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />

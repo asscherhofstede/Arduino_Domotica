@@ -12,6 +12,12 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/weatherView" />
     <TextView
         android:text="Ventilator Sensor"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -31,7 +37,7 @@
         android:textSize="20sp"
         android:id="@+id/textView88" />
     <TextView
-        android:text="0"
+        android:text=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
@@ -48,7 +54,7 @@
         android:textSize="20sp"
         android:id="@+id/textView6" />
     <TextView
-        android:text="0"
+        android:text=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"

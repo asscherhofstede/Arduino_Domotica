@@ -101,5 +101,7 @@ C:\Users\RBakk\Desktop\Github\Domotica\Arduino_Domotica\De Verstrooide Student\o
 C:\Users\RBakk\Desktop\Github\Domotica\Arduino_Domotica\De Verstrooide Student\obj\Debug\android\assets\System.Runtime.Serialization.pdb
 C:\Users\RBakk\Desktop\Github\Domotica\Arduino_Domotica\De Verstrooide Student\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\RBakk\Desktop\Github\Domotica\Arduino_Domotica\De Verstrooide Student\obj\Debug\android\assets\System.Xml.pdb
+C:\Users\RBakk\Desktop\Github\Domotica\Arduino_Domotica\De Verstrooide Student\obj\Debug\res\drawable\contrast.png
+C:\Users\RBakk\Desktop\Github\Domotica\Arduino_Domotica\De Verstrooide Student\obj\Debug\res\drawable\cloud.png
 C:\Users\RBakk\Desktop\Github\Domotica\Arduino_Domotica\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
 C:\Users\RBakk\Desktop\Github\Domotica\Arduino_Domotica\De Verstrooide Student\obj\Debug\linksrc\De Verstrooide Student.dll.mdb

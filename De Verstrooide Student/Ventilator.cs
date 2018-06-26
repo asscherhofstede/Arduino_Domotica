@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 
@@ -18,7 +18,7 @@ namespace De_Verstrooide_Student
     {
         TextView ventilatorStatus, ventilatorSensor;
         Intent intent2;
-
+        ImageView tempImage;
         string statusVentilator;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -29,6 +29,7 @@ namespace De_Verstrooide_Student
             SetContentView(Resource.Layout.Ventilator);
             ventilatorStatus = FindViewById<TextView>(Resource.Id.ventilator_status);
             ventilatorSensor = FindViewById<TextView>(Resource.Id.tempOutputView);
+            tempImage = FindViewById<ImageView>(Resource.Id.weatherView);
 
             if (Intent.Extras != null)
             {
@@ -56,10 +57,20 @@ namespace De_Verstrooide_Student
                 Persistence.ventilatorStatus = "Ventilator is aan";
                 Persistence.ventilatorSensor = "Temperatuur is boven de 20 Graden Celsius";
             }
-            ventilatorStatus.text = persistance.ventilatorSensor;
-            ventilatorStatus.Text = Persistence.ventilatorStatus;
-        }
 
+            ventilatorStatus.Text = Persistence.ventilatorSensor;
+            ventilatorStatus.Text = Persistence.ventilatorStatus;
+
+            if (Persistence.klikoStatus == "Ventilator is uit")
+            {
+                tempImage.SetImageResource(Resource.Drawable.cloud);
+
+            }
+            if (Persistence.klikoStatus == "Ventilator is aan")
+            {
+                tempImage.SetImageResource(Resource.Drawable.contrast);
+            }
+        }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
