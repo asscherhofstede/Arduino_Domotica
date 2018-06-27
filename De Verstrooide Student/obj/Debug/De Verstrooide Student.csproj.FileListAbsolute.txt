@@ -73,7 +73,6 @@ D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\res\drawable\cloud.p
 D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\R.cs.flag
 D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\R.txt
 D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\uploadflags.txt
-D:\programmeren\arduinomap\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
 D:\programmeren\arduinomap\De Verstrooide Student\bin\Debug\Mono.Android.pdb
 D:\programmeren\arduinomap\De Verstrooide Student\bin\Debug\mscorlib.pdb
 D:\programmeren\arduinomap\De Verstrooide Student\bin\Debug\System.Core.pdb
@@ -94,4 +93,18 @@ D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\linksrc\System.Net.H
 D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\linksrc\System.Runtime.Serialization.pdb
 D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\linksrc\Mono.Security.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\linksrc\De Verstrooide Student.dll.mdb
+D:\programmeren\arduinomap\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll.mdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\De Verstrooide Student.dll.mdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\Mono.Android.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\Mono.Security.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\mscorlib.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\System.Core.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\System.Net.Http.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\System.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\System.Runtime.Serialization.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\android\assets\System.Xml.pdb
+D:\programmeren\arduinomap\De Verstrooide Student\bin\Debug\De Verstrooide Student.dll
 D:\programmeren\arduinomap\De Verstrooide Student\obj\Debug\linksrc\De Verstrooide Student.dll.mdb

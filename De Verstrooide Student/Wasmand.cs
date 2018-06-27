@@ -46,14 +46,16 @@ namespace De_Verstrooide_Student
             SupportActionBar.Title = "De Verstrooide Student";
 
 
-            if (statusWasmand == "0")
+            if (Persistence.wasmandValue == "0")
             {
                 Persistence.wasmandStatus = "Zet de kliko aan de weg!";
             }
-            else if (statusWasmand == "1")
+            else if (Persistence.wasmandValue == "1")
             {
                 Persistence.wasmandStatus = "De kliko is aan de weg!";
             }
+            else if (Persistence.wasmandValue == "2")
+
             wasmand.Text = Persistence.wasmandStatus;
         }
         public override bool OnCreateOptionsMenu(IMenu menu)

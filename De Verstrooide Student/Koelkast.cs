@@ -17,6 +17,7 @@ namespace De_Verstrooide_Student
     public class Koelkast : AppCompatActivity
     {
         TextView koelkast;
+        ImageView koelkastFoto;
         Intent intent2;
 
         string statusKoelkast;
@@ -28,6 +29,7 @@ namespace De_Verstrooide_Student
             // Create your application here
             SetContentView(Resource.Layout.Koelkast);
             koelkast = FindViewById<TextView>(Resource.Id.koelkast_status);
+            koelkastFoto = FindViewById<ImageView>(Resource.Id.imageView1);
 
             if (Intent.Extras != null)
             {
@@ -36,7 +38,7 @@ namespace De_Verstrooide_Student
                     var value = Intent.Extras.GetString(key);
                     if (key == "status")
                     {
-                        statusKoelkast = value;
+                        Persistence.koelkastValue = value;
                     }
                 }
             }
@@ -45,15 +47,17 @@ namespace De_Verstrooide_Student
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
 
-            if (statusKoelkast == "0")
+            if (Persistence.klikoValue == "0")
             {
                 //foto van je kliko nog bij huis
-                Persistence.koelkastStatus = "Zet de kliko aan de weg!";
+                Persistence.koelkastStatus = "Je koelkast staat nog open!!";
+                koelkastFoto.SetImageResource(Resource.Drawable.Red_Trash);
             }
-            else if (statusKoelkast == "1")
+            else if (Persistence.klikoValue == "1")
             {
                 //foto van kliko aan de straat
-                Persistence.koelkastStatus = "De kliko is aan de weg!";
+                Persistence.koelkastStatus = "Je koelkast is dicht.";
+                koelkastFoto.SetImageResource(Resource.Drawable.Red_Trash);
             }
             koelkast.Text = Persistence.koelkastStatus;
         }
