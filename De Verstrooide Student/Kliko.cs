@@ -50,24 +50,21 @@ namespace De_Verstrooide_Student
             if (Persistence.klikoValue == "0")
             {
                 
-                Persistence.klikoStatus = "Zet de kliko aan de weg!";
+                Persistence.klikoStatus = "De kliko staat op zijn plek!";
+                fotokliko.SetImageResource(Resource.Drawable.Red_Trash);
             }
             else if (Persistence.klikoValue == "1")
             {
                 Persistence.klikoStatus = "De kliko is aan de weg!";
+                fotokliko.SetImageResource(Resource.Drawable.Green_Trash);
+            }
+            else if (Persistence.klikoValue == "2")
+            {
+                Persistence.klikoStatus = "Zet de kliko aan de weg! Morgen word hij opgehaald!";
             }
 
             kliko.Text = Persistence.klikoStatus;
 
-            if (Persistence.klikoValue == "Zet de kliko aan de weg!")
-            {
-                fotokliko.SetImageResource(Resource.Drawable.Red_Trash);
-
-            }
-            if (Persistence.klikoValue == "De kliko is aan de weg!")
-            {
-                fotokliko.SetImageResource(Resource.Drawable.Green_Trash);
-            }
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
