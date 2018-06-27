@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 
@@ -16,9 +16,9 @@ namespace De_Verstrooide_Student
     [Activity(Label = "Ventilator")]
     public class Ventilator : AppCompatActivity
     {
-        TextView ventilator;
+        TextView ventilatorStatus, ventilatorSensor;
         Intent intent2;
-
+        ImageView tempImage;
         string statusVentilator;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -27,7 +27,9 @@ namespace De_Verstrooide_Student
 
             // Create your application here
             SetContentView(Resource.Layout.Ventilator);
-            ventilator = FindViewById<TextView>(Resource.Id.ventilator_status);
+            ventilatorStatus = FindViewById<TextView>(Resource.Id.ventilator_status);
+            ventilatorSensor = FindViewById<TextView>(Resource.Id.tempOutputView);
+            tempImage = FindViewById<ImageView>(Resource.Id.weatherView);
 
             if (Intent.Extras != null)
             {
@@ -47,17 +49,28 @@ namespace De_Verstrooide_Student
 
             if (statusVentilator == "0")
             {
-                //foto van je kliko nog bij huis
-                Persistence.ventilatorStatus = "Ventilator uit";
+                Persistence.ventilatorStatus = "Ventilator is uit";
+                Persistence.ventilatorSensor = "Temperatuur is onder 20 Graden Celsius";
             }
             else if (statusVentilator == "1")
             {
-                //foto van kliko aan de straat
-                Persistence.ventilatorStatus = "Ventilator aan";
+                Persistence.ventilatorStatus = "Ventilator is aan";
+                Persistence.ventilatorSensor = "Temperatuur is boven de 20 Graden Celsius";
             }
-            ventilator.Text = Persistence.ventilatorStatus;
-        }
 
+            ventilatorStatus.Text = Persistence.ventilatorSensor;
+            ventilatorStatus.Text = Persistence.ventilatorStatus;
+
+            if (Persistence.klikoStatus == "Ventilator is uit")
+            {
+                tempImage.SetImageResource(Resource.Drawable.cloud);
+
+            }
+            if (Persistence.klikoStatus == "Ventilator is aan")
+            {
+                tempImage.SetImageResource(Resource.Drawable.contrast);
+            }
+        }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {

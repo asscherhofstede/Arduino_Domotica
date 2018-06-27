@@ -24,6 +24,10 @@ namespace De_Verstrooide_Student
 
         public override void OnMessageReceived(RemoteMessage message)
         {
+            string title = "";
+            string body = "";
+            string click_action = "";
+            //bool sensorStatus = false;
             Log.Debug(TAG, "From: " + message.From);
             
             if(message.GetNotification() != null)

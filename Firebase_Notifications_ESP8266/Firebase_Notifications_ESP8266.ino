@@ -45,13 +45,11 @@ void loop() {
     //Ventilator
     else if(input == 'd')
     {
-      SendDataToFirebase("De Verstrooide Student", "Het is warm! De ventilator gaat aan.", "Ventilator");
-      SendDataToFirebase("De Verstrooide Student", "1", ""
+      SendDataToFirebase("De Verstrooide Student", "Het is warm! De ventilator gaat aan.", "Ventilator", "1");
     }
     else if(input == 'e')
     {
-      SendDataToFirebase("De Verstrooide Student", "Het is koud! De ventilator gaat uit.", "Ventilator");
-      SendDataToFirebase("De Verstrooide Student", "0", "");
+      SendDataToFirebase("De Verstrooide Student", "Het is koud! De ventilator gaat uit.", "Ventilator", "0");
     }
     //
   }  
