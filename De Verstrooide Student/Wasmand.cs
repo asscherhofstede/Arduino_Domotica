@@ -47,11 +47,11 @@ namespace De_Verstrooide_Student
             SupportActionBar.Title = "De Verstrooide Student";
 
 
-            if (statusWasmand == "0")
+            if (Persistence.wasmandValue == "0")
             {
                 Persistence.wasmandStatus = "Wasmand is leeg";
             }
-            else if (statusWasmand == "1")
+            else if (Persistence.wasmandValue == "1")
             {
                 Persistence.wasmandStatus = "Wasmand is 50% vol";
             }
@@ -75,6 +75,9 @@ namespace De_Verstrooide_Student
                 //set image als lege wasmand
                 wasmandImg.SetImageResource(Resource.Mipmap.MANDVol);
             }
+            else if (Persistence.wasmandValue == "2")
+
+            wasmand.Text = Persistence.wasmandStatus;
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {

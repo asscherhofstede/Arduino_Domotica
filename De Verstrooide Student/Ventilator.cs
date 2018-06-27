@@ -51,25 +51,17 @@ namespace De_Verstrooide_Student
             {
                 Persistence.ventilatorStatus = "Ventilator is uit";
                 Persistence.ventilatorSensor = "Temperatuur is onder 20 Graden Celsius";
+                tempImage.SetImageResource(Resource.Drawable.cloud);
             }
-            else if (statusVentilator == "1")
+            else if (Persistence.ventilatorValue == "1")
             {
                 Persistence.ventilatorStatus = "Ventilator is aan";
                 Persistence.ventilatorSensor = "Temperatuur is boven de 20 Graden Celsius";
-            }
-
-            ventilatorStatus.Text = Persistence.ventilatorSensor;
-            ventilatorStatus.Text = Persistence.ventilatorStatus;
-
-            if (Persistence.klikoStatus == "Ventilator is uit")
-            {
-                tempImage.SetImageResource(Resource.Drawable.cloud);
-
-            }
-            if (Persistence.klikoStatus == "Ventilator is aan")
-            {
                 tempImage.SetImageResource(Resource.Drawable.contrast);
             }
+
+            ventilatorSensor.Text = Persistence.ventilatorSensor;
+            ventilatorStatus.Text = Persistence.ventilatorStatus;
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
