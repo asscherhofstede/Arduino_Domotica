@@ -25,6 +25,7 @@ namespace De_Verstrooide_Student
 
         public static string ventilatorStatus { get; set; }
         public static string ventilatorValue { get; set; }
+        public static string ventilatorSensor { get; set; }
 
         public static string wasmandStatus { get; set; }
         public static string wasmandValue { get; set; }

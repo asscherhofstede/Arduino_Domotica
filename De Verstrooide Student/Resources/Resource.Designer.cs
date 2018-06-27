@@ -2969,9 +2969,6 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b00c3
 			public const int tempOutputView = 2131427523;
 			
-			// aapt resource value: 0x7f0b00c1
-			public const int tempStatsView = 2131427521;
-			
 			// aapt resource value: 0x7f0b001a
 			public const int text = 2131427354;
 			
@@ -2988,7 +2985,7 @@ namespace De_Verstrooide_Student
 			public const int textView1 = 2131427495;
 			
 			// aapt resource value: 0x7f0b00c0
-			public const int textView5 = 2131427520;
+			public const int textView3 = 2131427520;
 			
 			// aapt resource value: 0x7f0b00c2
 			public const int textView6 = 2131427522;
@@ -3050,8 +3047,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b002e
 			public const int useLogo = 2131427374;
 			
-			// aapt resource value: 0x7f0b00bf
-			public const int ventilator_status = 2131427519;
+			// aapt resource value: 0x7f0b00c1
+			public const int ventilator_status = 2131427521;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
@@ -3061,6 +3058,9 @@ namespace De_Verstrooide_Student
 			
 			// aapt resource value: 0x7f0b00c4
 			public const int wasmand_status = 2131427524;
+			
+			// aapt resource value: 0x7f0b00bf
+			public const int weatherView = 2131427519;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int wide = 2131427362;

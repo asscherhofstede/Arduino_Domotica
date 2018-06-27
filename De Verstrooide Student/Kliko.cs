@@ -59,12 +59,12 @@ namespace De_Verstrooide_Student
 
             kliko.Text = Persistence.klikoStatus;
 
-            if (Persistence.klikoStatus == "Zet de kliko aan de weg!")
+            if (Persistence.klikoValue == "Zet de kliko aan de weg!")
             {
                 fotokliko.SetImageResource(Resource.Drawable.Red_Trash);
 
             }
-            if (Persistence.klikoStatus == "De kliko is aan de weg!")
+            if (Persistence.klikoValue == "De kliko is aan de weg!")
             {
                 fotokliko.SetImageResource(Resource.Drawable.Green_Trash);
             }

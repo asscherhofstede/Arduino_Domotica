@@ -47,7 +47,7 @@ namespace De_Verstrooide_Student
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
 
-            if (statusVentilator == "0")
+            if (Persistence.ventilatorValue == "0")
             {
                 Persistence.ventilatorStatus = "Ventilator is uit";
                 Persistence.ventilatorSensor = "Temperatuur is onder 20 Graden Celsius";
