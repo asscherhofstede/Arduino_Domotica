@@ -196,7 +196,7 @@ void Wasmand(){
   distanceWasmand = (durationWasmand/2) / 29.1;
 
   if (distanceWasmand < 20){
-    if (countKliko <= 60){
+    if (countWasmand <= 60){
     Serial.print("De wasmand is ");
     Serial.print(countWasmand);
     Serial.println(" seconde vol");

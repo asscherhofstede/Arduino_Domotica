@@ -11,16 +11,16 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/wasmandStatus" />
     <TextView
-        android:text="Large Text"
+        android:text="Wasmand sensor is nog niet gekalibreerd!"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:id="@+id/textView1" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wasmandStatus" />
 </LinearLayout>

@@ -59,6 +59,11 @@ namespace De_Verstrooide_Student
                 Persistence.ventilatorSensor = "Temperatuur is boven de 20 Graden Celsius";
                 tempImage.SetImageResource(Resource.Drawable.contrast);
             }
+            else if (Persistence.ventilatorValue == null)
+            {
+                Persistence.ventilatorStatus = "Onze sensoren kunnen niet zien of de ventilator aan of uit staat";
+                tempImage.SetImageResource(Resource.Mipmap.MANDLeeg);
+            }
 
             ventilatorSensor.Text = Persistence.ventilatorSensor;
             ventilatorStatus.Text = Persistence.ventilatorStatus;

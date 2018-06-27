@@ -17,6 +17,7 @@ namespace De_Verstrooide_Student
     public class KoffieZetApparaat : AppCompatActivity
     {
         TextView koffieZetApparaat;
+        ImageView koffieFoto;
         Intent intent2;
         string statusKoffieZetApparaat;
 
@@ -27,6 +28,7 @@ namespace De_Verstrooide_Student
             // Create your application here
             SetContentView(Resource.Layout.KoffieZetApparaat);
             koffieZetApparaat = FindViewById<TextView>(Resource.Id.koffieZetApparaat_status);
+            koffieFoto = FindViewById<ImageView>(Resource.Id.koffieFoto);
 
             if (Intent.Extras != null)
             {
@@ -44,15 +46,20 @@ namespace De_Verstrooide_Student
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
 
-            if (statusKoffieZetApparaat == "0")
+            if (Persistence.koffieZetApparaatValue == "0")
             {
                 //foto van je kliko nog bij huis
-                Persistence.koffieZetApparaatStatus = "Zet de kliko aan de weg!";
+                Persistence.koffieZetApparaatStatus = "Koffie is uit";
             }
-            else if (statusKoffieZetApparaat == "1")
+            else if (Persistence.koffieZetApparaatValue == "1")
             {
                 //foto van kliko aan de straat
-                Persistence.koffieZetApparaatStatus = "De kliko is aan de weg!";
+                Persistence.koffieZetApparaatStatus = "Koffie is aan!";
+            }
+            else if (Persistence.koffieZetApparaatValue == null)
+            {
+                Persistence.koffieZetApparaatStatus = "Onze sensoren kunnen niet zien of de koffiezetapparaat aan of uit is!";
+                koffieFoto.SetImageResource(Resource.Mipmap.MANDLeeg);
             }
             koffieZetApparaat.Text = Persistence.koffieZetApparaatStatus;
         }

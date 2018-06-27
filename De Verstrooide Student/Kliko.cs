@@ -61,6 +61,11 @@ namespace De_Verstrooide_Student
             {
                 Persistence.klikoStatus = "Zet de kliko aan de weg! Morgen word hij opgehaald!";
             }
+            else if (Persistence.klikoValue == null)
+            {
+                Persistence.klikoStatus = "Onze sensoren kunnen niet zien of de koelkast open of dicht is!";
+                fotokliko.SetImageResource(Resource.Mipmap.MANDLeeg);
+            }
 
             kliko.Text = Persistence.klikoStatus;
 

@@ -29,7 +29,7 @@ namespace De_Verstrooide_Student
             // Create your application here
             SetContentView(Resource.Layout.Koelkast);
             koelkast = FindViewById<TextView>(Resource.Id.koelkast_status);
-            koelkastFoto = FindViewById<ImageView>(Resource.Id.imageView1);
+            koelkastFoto = FindViewById<ImageView>(Resource.Id.koelkastFoto);
 
             if (Intent.Extras != null)
             {
@@ -47,17 +47,22 @@ namespace De_Verstrooide_Student
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
 
-            if (Persistence.klikoValue == "0")
+            if (Persistence.koelkastValue == "0")
             {
                 //foto van je kliko nog bij huis
                 Persistence.koelkastStatus = "Je koelkast staat nog open!!";
                 koelkastFoto.SetImageResource(Resource.Drawable.Red_Trash);
             }
-            else if (Persistence.klikoValue == "1")
+            else if (Persistence.koelkastValue == "1")
             {
                 //foto van kliko aan de straat
                 Persistence.koelkastStatus = "Je koelkast is dicht.";
                 koelkastFoto.SetImageResource(Resource.Drawable.Red_Trash);
+            }
+            else if (Persistence.koelkastValue == null)
+            {
+                Persistence.koelkastStatus = "Onze sensoren kunnen niet zien of de koelkast open of dicht is!";
+                koelkastFoto.SetImageResource(Resource.Mipmap.MANDLeeg);
             }
             koelkast.Text = Persistence.koelkastStatus;
         }

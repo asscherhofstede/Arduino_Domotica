@@ -46,38 +46,29 @@ namespace De_Verstrooide_Student
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
 
+           // wasmandText.Text = "Onze sensoren vangen de kliko nog niet op!";
 
             if (Persistence.wasmandValue == "0")
             {
                 Persistence.wasmandStatus = "Wasmand is leeg";
+                wasmandImg.SetImageResource(Resource.Mipmap.MANDLeeg);
             }
             else if (Persistence.wasmandValue == "1")
             {
                 Persistence.wasmandStatus = "Wasmand is 50% vol";
-            }
-            else if (statusWasmand == "2")
-            {
-                Persistence.wasmandStatus = "Wasmand is volledig gevuld.";
-            }
-            wasmandText.Text = Persistence.wasmandStatus;
-            if (Persistence.wasmandStatus == "Wasmand is leeg")
-            {
-                //set image als lege wasmand
-                wasmandImg.SetImageResource(Resource.Mipmap.MANDLeeg);
-            }
-            else if (Persistence.wasmandStatus == "Wasmand is 50% vol")
-            {
-                //set image als lege wasmand
                 wasmandImg.SetImageResource(Resource.Mipmap.MANDHalf);
             }
-            else if (Persistence.wasmandStatus == "Wasmand is volledig gevuld.")
+            else if (Persistence.wasmandValue == "2")
             {
-                //set image als lege wasmand
+                Persistence.wasmandStatus = "Wasmand is volledig gevuld.";
                 wasmandImg.SetImageResource(Resource.Mipmap.MANDVol);
             }
-            else if (Persistence.wasmandValue == "2")
-
-            wasmand.Text = Persistence.wasmandStatus;
+            else if (Persistence.wasmandValue == null)
+            {
+                Persistence.wasmandStatus = "Onze sensoren vangen de wasmand nog niet op!";
+                wasmandImg.SetImageResource(Resource.Mipmap.MANDLeeg);
+            }
+            wasmandText.Text = Persistence.wasmandStatus;
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
