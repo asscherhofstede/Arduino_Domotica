@@ -3057,7 +3057,7 @@ namespace De_Verstrooide_Student
 			public const int visible = 2131427525;
 			
 			// aapt resource value: 0x7f0b00c4
-			public const int wasmand_status = 2131427524;
+			public const int wasmandStatus = 2131427524;
 			
 			// aapt resource value: 0x7f0b00bf
 			public const int weatherView = 2131427519;

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -17,7 +16,8 @@ namespace De_Verstrooide_Student
     public class Wasmand : AppCompatActivity
     {
         Intent intent2;
-        TextView wasmand;
+        ImageView wasmandImg;
+        TextView wasmandText;
 
         string statusWasmand;
         protected override void OnCreate(Bundle savedInstanceState)
@@ -26,7 +26,8 @@ namespace De_Verstrooide_Student
 
             // Create your application here
             SetContentView(Resource.Layout.Wasmand);
-            wasmand = FindViewById<TextView>(Resource.Id.wasmand_status);
+            wasmandImg = FindViewById<ImageView>(Resource.Id.wasmandStatus);
+            wasmandText = FindViewById<TextView>(Resource.Id.textView1);
 
             //als je data stuurt(status van sensor) dan ontvangt hij het als intent.extras
             if (Intent.Extras != null)
@@ -48,13 +49,32 @@ namespace De_Verstrooide_Student
 
             if (statusWasmand == "0")
             {
-                Persistence.wasmandStatus = "Zet de kliko aan de weg!";
+                Persistence.wasmandStatus = "Wasmand is leeg";
             }
             else if (statusWasmand == "1")
             {
-                Persistence.wasmandStatus = "De kliko is aan de weg!";
+                Persistence.wasmandStatus = "Wasmand is 50% vol";
             }
-            wasmand.Text = Persistence.wasmandStatus;
+            else if (statusWasmand == "2")
+            {
+                Persistence.wasmandStatus = "Wasmand is volledig gevuld.";
+            }
+            wasmandText.Text = Persistence.wasmandStatus;
+            if (Persistence.wasmandStatus == "Wasmand is leeg")
+            {
+                //set image als lege wasmand
+                wasmandImg.SetImageResource(Resource.Mipmap.MANDLeeg);
+            }
+            else if (Persistence.wasmandStatus == "Wasmand is 50% vol")
+            {
+                //set image als lege wasmand
+                wasmandImg.SetImageResource(Resource.Mipmap.MANDHalf);
+            }
+            else if (Persistence.wasmandStatus == "Wasmand is volledig gevuld.")
+            {
+                //set image als lege wasmand
+                wasmandImg.SetImageResource(Resource.Mipmap.MANDVol);
+            }
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
