@@ -3054,7 +3054,7 @@ namespace De_Verstrooide_Student
 			public const int visible = 2131427525;
 			
 			// aapt resource value: 0x7f0b00c4
-			public const int wasmand_status = 2131427524;
+			public const int wasmandStatus = 2131427524;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int wide = 2131427362;
@@ -3362,6 +3362,15 @@ namespace De_Verstrooide_Student
 			
 			// aapt resource value: 0x7f030003
 			public const int ic_stat_ic_notification = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int MANDHalf = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int MANDLeeg = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int MANDVol = 2130903046;
 			
 			static Mipmap()
 			{
