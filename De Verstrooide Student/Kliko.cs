@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -19,6 +18,7 @@ namespace De_Verstrooide_Student
     {
         Intent intent2;
         TextView kliko;
+        ImageView fotokliko;
         string statusKliko;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -28,7 +28,7 @@ namespace De_Verstrooide_Student
             // Create your application here
             SetContentView(Resource.Layout.Kliko);
             kliko = FindViewById<TextView>(Resource.Id.kliko_status);
-
+            fotokliko = FindViewById<ImageView>(Resource.Id.imageView1);
             //als je data stuurt(status van sensor) dan ontvangt hij het als intent.extras
             if (Intent.Extras != null)
             {
@@ -49,15 +49,25 @@ namespace De_Verstrooide_Student
 
             if (Persistence.klikoValue == "0")
             {
-                //foto van je kliko nog bij huis
+                
                 Persistence.klikoStatus = "Zet de kliko aan de weg!";
             }
             else if (Persistence.klikoValue == "1")
             {
-                //foto van kliko aan de straat
                 Persistence.klikoStatus = "De kliko is aan de weg!";
             }
+
             kliko.Text = Persistence.klikoStatus;
+
+            if (Persistence.klikoStatus == "Zet de kliko aan de weg!")
+            {
+                fotokliko.SetImageResource(Resource.Drawable.Red_Trash);
+
+            }
+            if (Persistence.klikoStatus == "De kliko is aan de weg!")
+            {
+                fotokliko.SetImageResource(Resource.Drawable.Green_Trash);
+            }
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

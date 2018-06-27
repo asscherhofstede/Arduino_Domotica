@@ -34,13 +34,16 @@ void loop() {
   {
     char input = Serial.read();
     //Kliko
-    if(input == 'a')
+    if(input == 'j')
     {
-      SendDataToFirebase("De Verstrooide Student", "Zet je kliko buiten", "Kliko");
-      SendDataToFirebase("De Verstrooide Student", "Kliko: 0", "");
+      SendDataToFirebase("De Verstrooide Student", "Zet je kliko buiten", "Kliko", "wasmand zit 20% vol");
+      SendDataToFirebase("De Verstrooide Student", "Kliko", "", "0");
     }
-    else if (input == 'b'){
-      SendDataToFirebase("De Verstrooide Student", "Kliko: 1", "");
+    else if (input == 'k'){
+      SendDataToFirebase("De Verstrooide Student", "Kliko staat op zijn plek", "", "1");
+    }
+    else if (input == 'l'){
+      SendDataToFirebase("De Verstrooide Student", "Kliko staat niet op zijn plek", "", "0");
     }
     //Ventilator
     else if(input == 'd')
