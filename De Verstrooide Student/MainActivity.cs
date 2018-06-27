@@ -14,6 +14,9 @@ using Android.Views;
 
 namespace De_Verstrooide_Student
 {
+    /// <summary>
+    /// De homepage je je token kan loggen zodat je notifcatie en statussen kan krijgen
+    /// </summary>
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
@@ -24,7 +27,10 @@ namespace De_Verstrooide_Student
         Intent intent;
         Intent intent2;
 
-
+        /// <summary>
+        /// Maakt de activity aan en zorgt voor de standaard foto en text, layout
+        /// </summary>
+        /// <param name="savedInstanceState"> onthoud de stand van de telefoon. Horizontaal of verticaal.</param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -102,7 +108,10 @@ namespace De_Verstrooide_Student
                 Log.Debug(TAG, "Subscribed to remote notifications");
             };
         }
-
+        /// <summary>
+        /// Kijkt of je wel connectie heb met firebace
+        /// </summary>
+        /// <returns>returnt of firebase  beschikbaar is of niet</returns>
         bool IsPlayServicesAvailable()
         {
             int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
@@ -125,6 +134,11 @@ namespace De_Verstrooide_Student
                 return true;
             }
         }
+        /// <summary>
+        /// Maakt menu voor navigatie door de app. Staat in de toolbar.
+        /// </summary>
+        /// <param name="menu"> Opent juiste menu</param>
+        /// <returns>stuurt het juiste menu terug</returns>
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.toolbar_menu, menu);
@@ -132,7 +146,11 @@ namespace De_Verstrooide_Student
             item.SetVisible(false);
             return base.OnCreateOptionsMenu(menu);
         }
-
+        /// <summary>
+        /// Navigeer naar de layout waar je op klikt
+        /// </summary>
+        /// <param name="item"> Hij stuurt terug naar wat voor pagina de knop verwijst.</param>
+        /// <returns> Hij navigeert naar de gedrukte pagina</returns>
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             if (item.TitleFormatted.ToString() == "Koelkast")
@@ -156,6 +174,12 @@ namespace De_Verstrooide_Student
             else if (item.TitleFormatted.ToString() == "Ventilator")
             {
                 intent2 = new Intent(this, typeof(Ventilator));
+                intent2.AddFlags(ActivityFlags.ClearTop);
+                StartActivity(intent2);
+            }
+            else if (item.TitleFormatted.ToString() == "KoffieZetApparaat")
+            {
+                intent2 = new Intent(this, typeof(KoffieZetApparaat));
                 intent2.AddFlags(ActivityFlags.ClearTop);
                 StartActivity(intent2);
             }

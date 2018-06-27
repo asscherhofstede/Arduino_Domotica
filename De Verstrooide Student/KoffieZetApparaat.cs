@@ -13,14 +13,19 @@ using Android.Widget;
 
 namespace De_Verstrooide_Student
 {
+    /// <summary>
+    /// KoffieZetApparaat activity die de status aangeeft van het koffiezet apparaat
+    /// </summary>
     [Activity(Label = "KoffieZetApparaat")]
     public class KoffieZetApparaat : AppCompatActivity
     {
         TextView koffieZetApparaat;
         ImageView koffieFoto;
         Intent intent2;
-        string statusKoffieZetApparaat;
-
+        /// <summary>
+        /// Maakt de activity aan en zorgt voor de standaard foto en text, layout
+        /// </summary>
+        /// <param name="savedInstanceState"> onthoud de stand van de telefoon. Horizontaal of verticaal.</param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -37,7 +42,7 @@ namespace De_Verstrooide_Student
                     var value = Intent.Extras.GetString(key);
                     if (key == "status")
                     {
-                        statusKoffieZetApparaat = value;
+                        Persistence.koffieZetApparaatValue = value;
                     }
                 }
             }
@@ -50,20 +55,26 @@ namespace De_Verstrooide_Student
             {
                 //foto van je kliko nog bij huis
                 Persistence.koffieZetApparaatStatus = "Koffie is uit";
+                koffieFoto.SetImageResource(Resource.Drawable.Koffie_Uit);
             }
             else if (Persistence.koffieZetApparaatValue == "1")
             {
                 //foto van kliko aan de straat
                 Persistence.koffieZetApparaatStatus = "Koffie is aan!";
+                koffieFoto.SetImageResource(Resource.Drawable.Koffie_Aan);
             }
             else if (Persistence.koffieZetApparaatValue == null)
             {
                 Persistence.koffieZetApparaatStatus = "Onze sensoren kunnen niet zien of de koffiezetapparaat aan of uit is!";
-                koffieFoto.SetImageResource(Resource.Mipmap.MANDLeeg);
+                koffieFoto.SetImageResource(Resource.Drawable.Geen_Koffie);
             }
             koffieZetApparaat.Text = Persistence.koffieZetApparaatStatus;
         }
-
+        /// <summary>
+        /// Maakt menu voor navigatie door de app. Staat in de toolbar.
+        /// </summary>
+        /// <param name="menu"> Opent juiste menu</param>
+        /// <returns>stuurt het juiste menu terug</returns>
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.toolbar_menu, menu);
@@ -71,7 +82,11 @@ namespace De_Verstrooide_Student
             item.SetVisible(false);
             return base.OnCreateOptionsMenu(menu);
         }
-
+        /// <summary>
+        /// Navigeer naar de layout waar je op klikt
+        /// </summary>
+        /// <param name="item"> Hij stuurt terug naar wat voor pagina de knop verwijst.</param>
+        /// <returns> Hij navigeert naar de gedrukte pagina</returns>
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             if (item.TitleFormatted.ToString() == "Koelkast")

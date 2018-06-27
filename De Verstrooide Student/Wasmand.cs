@@ -12,6 +12,9 @@ using Android.Widget;
 
 namespace De_Verstrooide_Student
 {
+    /// <summary>
+    /// Wasmand activity die de status aangeeft hoe vol de wasmand is
+    /// </summary>
     [Activity(Label = "Wasmand")]
     public class Wasmand : AppCompatActivity
     {
@@ -19,7 +22,10 @@ namespace De_Verstrooide_Student
         ImageView wasmandImg;
         TextView wasmandText;
 
-        string statusWasmand;
+        /// <summary>
+        /// Maakt de activity aan en zorgt voor de standaard foto en text, layout
+        /// </summary>
+        /// <param name="savedInstanceState"> onthoud de stand van de telefoon. Horizontaal of verticaal.</param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -27,7 +33,7 @@ namespace De_Verstrooide_Student
             // Create your application here
             SetContentView(Resource.Layout.Wasmand);
             wasmandImg = FindViewById<ImageView>(Resource.Id.wasmandStatus);
-            wasmandText = FindViewById<TextView>(Resource.Id.textView1);
+            wasmandText = FindViewById<TextView>(Resource.Id.text_wasmand);
 
             //als je data stuurt(status van sensor) dan ontvangt hij het als intent.extras
             if (Intent.Extras != null)
@@ -37,7 +43,7 @@ namespace De_Verstrooide_Student
                     var value = Intent.Extras.GetString(key);
                     if (key == "status")
                     {
-                        statusWasmand = value;
+                        Persistence.wasmandValue = value;
                     }
                 }
             }
@@ -46,7 +52,6 @@ namespace De_Verstrooide_Student
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
 
-           // wasmandText.Text = "Onze sensoren vangen de kliko nog niet op!";
 
             if (Persistence.wasmandValue == "0")
             {
@@ -66,10 +71,15 @@ namespace De_Verstrooide_Student
             else if (Persistence.wasmandValue == null)
             {
                 Persistence.wasmandStatus = "Onze sensoren vangen de wasmand nog niet op!";
-                wasmandImg.SetImageResource(Resource.Mipmap.MANDLeeg);
+                wasmandImg.SetImageResource(Resource.Mipmap.Geen_Mand);
             }
             wasmandText.Text = Persistence.wasmandStatus;
         }
+        /// <summary>
+        /// Maakt menu voor navigatie door de app. Staat in de toolbar.
+        /// </summary>
+        /// <param name="menu"> Opent juiste menu</param>
+        /// <returns>stuurt het juiste menu terug</returns>
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             
@@ -80,6 +90,11 @@ namespace De_Verstrooide_Student
             
         }
 
+        /// <summary>
+        /// Navigeer naar de layout waar je op klikt
+        /// </summary>
+        /// <param name="item"> Hij stuurt terug naar wat voor pagina de knop verwijst.</param>
+        /// <returns> Hij navigeert naar de gedrukte pagina</returns>
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             if (item.TitleFormatted.ToString() == "Koelkast")
@@ -93,8 +108,7 @@ namespace De_Verstrooide_Student
                 intent2 = new Intent(this, typeof(Kliko));
                 intent2.AddFlags(ActivityFlags.ClearTop);
                 StartActivity(intent2);
-            }
-           
+            }           
             else if (item.TitleFormatted.ToString() == "Ventilator")
             {
                 intent2 = new Intent(this, typeof(Ventilator));
@@ -106,10 +120,7 @@ namespace De_Verstrooide_Student
                 intent2 = new Intent(this, typeof(MainActivity));
                 intent2.AddFlags(ActivityFlags.ClearTop);
                 StartActivity(intent2);
-            }
-            
-                
-            
+            }            
             return base.OnOptionsItemSelected(item);
         }
     }

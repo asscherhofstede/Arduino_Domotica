@@ -9,6 +9,9 @@ using System.Collections.Generic;
 
 namespace De_Verstrooide_Student
 {
+    /// <summary>
+    /// Activity die de noticaties binnenkrijgt en een intent stuurt naar de juiste activity
+    /// </summary>
     [Service]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     public class MyFirebaseMessagingService : FirebaseMessagingService
@@ -18,15 +21,15 @@ namespace De_Verstrooide_Student
         string title = "";
         string body = "";
         string click_action = "";
-        string[] array = new string[] {"Kliko", "Koelkast", "KoffieZetApparaat", "Ventilator", "Wasmand"};
 
         Intent intent;
-
+        /// <summary>
+        /// Als firebase een message doorstuurt dan word deze method geactiveerd
+        /// </summary>
+        /// <param name="message">De complete message vanuit firebase</param>
         public override void OnMessageReceived(RemoteMessage message)
         {
-            string title = "";
-            string body = "";
-            string click_action = "";
+
             //bool sensorStatus = false;
             Log.Debug(TAG, "From: " + message.From);
             
@@ -83,7 +86,12 @@ namespace De_Verstrooide_Student
                 }
             }
         }
-
+        /// <summary>
+        /// Stuurt notificatie naar telefoon
+        /// </summary>
+        /// <param name="title">titel van notificatie. Standaar: de verstrooide student.</param>
+        /// <param name="body">De text in melding en tevens hetgene wat de status van de app aanstuurt</param>
+        /// <param name="click_Action">Naar welke activity de melding verwijst als je er op klikt</param>
         void SendNotification(string title, string body, string click_Action)
         {            
             if (click_Action.Equals("Kliko"))
@@ -121,7 +129,7 @@ namespace De_Verstrooide_Student
                 intent = new Intent(this, typeof(MainActivity));
                 intent.AddFlags(ActivityFlags.ClearTop);
             }
-
+            
             var pendingIntent = PendingIntent.GetActivity(this, 0, intent, PendingIntentFlags.OneShot);
 
             Notification notification;
@@ -138,6 +146,7 @@ namespace De_Verstrooide_Student
                                             .SetContentIntent(pendingIntent)
                                             .Build();
             }
+            
             else
             {
                 // Setup a NotificationChannel, Go crazy and make it public, urgent with lights, vibrations & sound.

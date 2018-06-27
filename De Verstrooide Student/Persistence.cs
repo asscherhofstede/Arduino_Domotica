@@ -12,6 +12,9 @@ using Android.Widget;
 
 namespace De_Verstrooide_Student
 {
+    /// <summary>
+    /// Zorgt ervoor dat na het switchen van activity de status hetzelfde blijft
+    /// </summary>
     class Persistence
     {
         public static string klikoStatus { get; set; }

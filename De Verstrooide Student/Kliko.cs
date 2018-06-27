@@ -13,13 +13,19 @@ using Android.Widget;
 
 namespace De_Verstrooide_Student
 {
+    /// <summary>
+    /// Kliko activity die de status aangeeft van de kliko
+    /// </summary>
     [Activity(Label = "Kliko")]
     public class Kliko : AppCompatActivity
     {
         Intent intent2;
         TextView kliko;
         ImageView fotokliko;
-
+        /// <summary>
+        /// Maakt de activity aan en zorgt voor de standaard foto en text, layout
+        /// </summary>
+        /// <param name="savedInstanceState"> onthoud de stand van de telefoon. Horizontaal of verticaal.</param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -48,7 +54,6 @@ namespace De_Verstrooide_Student
 
             if (Persistence.klikoValue == "0")
             {
-                
                 Persistence.klikoStatus = "De kliko staat op zijn plek!";
                 fotokliko.SetImageResource(Resource.Drawable.Red_Trash);
             }
@@ -63,14 +68,18 @@ namespace De_Verstrooide_Student
             }
             else if (Persistence.klikoValue == null)
             {
-                Persistence.klikoStatus = "Onze sensoren kunnen niet zien of de koelkast open of dicht is!";
-                fotokliko.SetImageResource(Resource.Mipmap.MANDLeeg);
+                Persistence.klikoStatus = "Onze sensoren kunnen niet zien waar de kliko staat!";
+                fotokliko.SetImageResource(Resource.Drawable.Geen_Trash);
             }
 
             kliko.Text = Persistence.klikoStatus;
 
         }
-
+        /// <summary>
+        /// Maakt menu voor navigatie door de app. Staat in de toolbar.
+        /// </summary>
+        /// <param name="menu"> Opent juiste menu</param>
+        /// <returns>stuurt het juiste menu terug</returns>
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.toolbar_menu, menu);
@@ -79,6 +88,11 @@ namespace De_Verstrooide_Student
             return base.OnCreateOptionsMenu(menu);
         }
 
+        /// <summary>
+        /// Navigeer naar de layout waar je op klikt
+        /// </summary>
+        /// <param name="item"> Hij stuurt terug naar wat voor pagina de knop verwijst.</param>
+        /// <returns> Hij navigeert naar de gedrukte pagina</returns>
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             if (item.TitleFormatted.ToString() == "Koelkast")

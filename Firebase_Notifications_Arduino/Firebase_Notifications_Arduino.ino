@@ -68,13 +68,13 @@ void loop() {
   //Eerst alle methods laten lopen?
   //Of per onderdeel eerst de method en dan de if statement?
   //Of in je method al de if statement --> ziet er naar mijn mening beter uit.
-  Kliko();
+  //Kliko();
   delay(200);
   Koelkast();
   delay(200);
-  Ventilator();
+  //Ventilator();
   delay(200);
-  Wasmand();
+  //Wasmand();
   delay(200);
   //KoffieZetApparaat(); 
   delay(200);
@@ -147,6 +147,7 @@ void Koelkast(){
   }
   if(digitalRead(magnet) == LOW)
   {
+    Serial.println("magneten uit elkaar");
     countKoelkast = 0;
     noTone(buzzer);
   }
@@ -225,11 +226,11 @@ void KoffieZetApparaat(){
  if(hour() >= 8)
   {
     Serial.println("Koffie gaat aan");
-     pa3Transmitter.sendUnit(1, 1); 
-     Arduino.print('e')
+     apa3Transmitter.sendUnit(1, 1); 
+     Arduino.print('e');
    
   } 
-  else if ( hour() =< 10)
+  else if ( hour() <= 10)
   {
      apa3Transmitter.sendUnit(1, 0); 
      Arduino.print('f');

@@ -13,14 +13,19 @@ using Android.Widget;
 
 namespace De_Verstrooide_Student
 {
+    /// <summary>
+    /// Ventilator activity die de status aangeeft van de Ventilator
+    /// </summary>
     [Activity(Label = "Ventilator")]
     public class Ventilator : AppCompatActivity
     {
         TextView ventilatorStatus, ventilatorSensor;
         Intent intent2;
         ImageView tempImage;
-        string statusVentilator;
-
+        /// <summary>
+        /// Maakt de activity aan en zorgt voor de standaard foto en text, layout
+        /// </summary>
+        /// <param name="savedInstanceState"> onthoud de stand van de telefoon. Horizontaal of verticaal.</param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -38,7 +43,7 @@ namespace De_Verstrooide_Student
                     var value = Intent.Extras.GetString(key);
                     if (key == "status")
                     {
-                        statusVentilator = value;
+                        Persistence.ventilatorValue = value;
                     }
                 }
             }
@@ -62,13 +67,17 @@ namespace De_Verstrooide_Student
             else if (Persistence.ventilatorValue == null)
             {
                 Persistence.ventilatorStatus = "Onze sensoren kunnen niet zien of de ventilator aan of uit staat";
-                tempImage.SetImageResource(Resource.Mipmap.MANDLeeg);
+                tempImage.SetImageResource(Resource.Drawable.Geen_Ventilator);
             }
 
             ventilatorSensor.Text = Persistence.ventilatorSensor;
             ventilatorStatus.Text = Persistence.ventilatorStatus;
         }
-
+        /// <summary>
+        /// Maakt menu voor navigatie door de app. Staat in de toolbar.
+        /// </summary>
+        /// <param name="menu"> Opent juiste menu</param>
+        /// <returns>stuurt het juiste menu terug</returns>
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.toolbar_menu, menu);
@@ -76,7 +85,11 @@ namespace De_Verstrooide_Student
             item.SetVisible(false);
             return base.OnCreateOptionsMenu(menu);
         }
-
+        /// <summary>
+        /// Navigeer naar de layout waar je op klikt
+        /// </summary>
+        /// <param name="item"> Hij stuurt terug naar wat voor pagina de knop verwijst.</param>
+        /// <returns> Hij navigeert naar de gedrukte pagina</returns>
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             if (item.TitleFormatted.ToString() == "Koelkast")
