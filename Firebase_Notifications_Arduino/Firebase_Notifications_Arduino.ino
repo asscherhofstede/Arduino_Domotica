@@ -34,6 +34,7 @@ DallasTemperature sensors(&oneWire);
 float temperatuur = 0;
 bool geluid = true;
 bool unit1 = false;
+bool wasmandVol = false;
  
 NewRemoteTransmitter apa3Transmitter(unitCodeApa3, RFPin, 260, 3);    //transmitter
 
@@ -195,32 +196,39 @@ void Wasmand(){
   digitalWrite(trigPinWasmand, LOW);
   durationWasmand = pulseIn(echoPinWasmand, HIGH);
   distanceWasmand = (durationWasmand/2) / 29.1;
-
-  if (distanceWasmand < 20){
-    if (countWasmand <= 60){
-    Serial.print("De wasmand is ");
-    Serial.print(countWasmand);
-    Serial.println(" seconde vol");
-    }
-    if (countWasmand >= 60){
-      minutes = countWasmand / 60;
-      Serial.print("De wasmand is ");
-      Serial.print(minutes);
-      Serial.println(" minuut/minuten vol");
-    }
-    countWasmand++;
-  }
-  else {
-   countWasmand = 0;
-   Serial.println("Je hoeft nog niet te wassen :D");
-  }
+  countWasmand++;
   
-  if(countWasmand == 10 && weekday() == 2 && hour() >= 9)
-  {
-    Serial.println("De wasmand zit vol!");
-    Arduino.print('d'); 
-  } 
+
+  if((distance < 100 && distance > 75) && countWasmand > 10){
+    Serial.println("De wasmand is leeg!");
+    Arduino.print('a');
+    wasmandVol = false;  
+      
+    if(countWasmand > 10){
+      countWasmand = 0;
+    }
+  }
+  else if((distance < 75 && distance > 25) && countWasmand > 10){
+    Serial.println("Je wasmand is voor de helft vol!");
+    Arduino.print('b');
+    wasmandVol = false;
+    
+     if(countWasmand > 10){
+      countWasmand = 0;
+    }
+  }
+  else if((distance < 25) && (countWasmand > 10) && (wasmandVol == false)){
+    PORTB = B100000;
+    Serial.print("Je wasmand is vol! Wassen maar!");
+    Arduino.print('c');
+    wasmandVol = true;
+    
+    if(countWasmand > 10){
+      countWasmand = 0;
+    }
+  }
 }
+
 
 void KoffieZetApparaat(){
  if(hour() >= 8)
