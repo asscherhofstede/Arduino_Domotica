@@ -129,8 +129,8 @@ void Koelkast(){
     Serial.println(countKoelkast);
     if ( countKoelkast == 5)
     {
-      Arduino.print('b');
-      Serial.println("Doe de Koelkast dicht nerd");
+      Arduino.print('h');
+      Serial.println("Doe de Koelkast dicht");
     } 
      if ( countKoelkast > 5)
     {
