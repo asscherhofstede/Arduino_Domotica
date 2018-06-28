@@ -11,6 +11,9 @@ using Android.Content;
 using System.Collections.Generic;
 using Android.Support.V7.Widget;
 using Android.Views;
+using System.Net.Sockets;
+using System.Net;
+using System.Text;
 
 namespace De_Verstrooide_Student
 {
@@ -24,8 +27,14 @@ namespace De_Verstrooide_Student
         const string TAG = "MainActivity";
         string status = "";
         string click_action = "";
+        string ventilator, koelkast;
+
+        EditText koelkastValue, ventilatorValue;
+        Button koelkastButton, ventilatorButton;
+
         Intent intent;
         Intent intent2;
+
 
         /// <summary>
         /// Maakt de activity aan en zorgt voor de standaard foto en text, layout
@@ -36,6 +45,11 @@ namespace De_Verstrooide_Student
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            koelkastValue = FindViewById<EditText>(Resource.Id.KoelkastSetting);
+            ventilatorValue = FindViewById<EditText>(Resource.Id.VentilatorSetting);
+            koelkastButton = FindViewById<Button>(Resource.Id.KoelkastSettingButton);
+            ventilatorButton = FindViewById<Button>(Resource.Id.VentilatorSettingButton);
+
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = "De Verstrooide Student";
@@ -101,11 +115,16 @@ namespace De_Verstrooide_Student
                 Log.Debug(TAG, "InstanceID token: {0}", FirebaseInstanceId.Instance.Token);
             };
 
-            var subscribeButton = FindViewById<Button>(Resource.Id.subscribeButton);
-            subscribeButton.Click += delegate
+            koelkastButton.Click += delegate
             {
-                FirebaseMessaging.Instance.SubscribeToTopic("news");
-                Log.Debug(TAG, "Subscribed to remote notifications");
+                koelkast = "Koelkast" + koelkastValue.Text;
+                SetSetting(koelkast);
+            };
+
+            ventilatorButton.Click += delegate
+            {
+                ventilator = "Ventilator" + ventilatorValue.Text;
+                SetSetting(ventilator);
             };
         }
         /// <summary>
@@ -187,6 +206,33 @@ namespace De_Verstrooide_Student
             return base.OnOptionsItemSelected(item);
         }
 
+
+
+        public void SetSetting(string value)
+        {
+            Socket s = Open("192.168.1.43", 50007);
+            Send(s, value);
+            Close(s);
+        }
+
+        public Socket Open(string ipaddress, int portnr)
+        {
+            Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPAddress ip = IPAddress.Parse(ipaddress);
+            IPEndPoint endpoint = new IPEndPoint(ip, portnr);
+            socket.Connect(endpoint);
+            return socket;
+        }
+
+        public void Send(Socket socket, string text)
+        {
+            socket.Send(Encoding.ASCII.GetBytes(text));
+        }
+
+        public void Close(Socket socket)
+        {
+            socket.Close();
+        }
     }
 }
 
