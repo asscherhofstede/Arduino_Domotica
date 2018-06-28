@@ -259,13 +259,13 @@ void KoffieZetApparaat(){
  if(hour() >= 8)
   {
      apa3Transmitter.sendUnit(1, 1); 
-     Arduino.print('e');
+     Arduino.print('f');
    
   } 
   else if (hour() <= 10)
   {
      apa3Transmitter.sendUnit(1, 0); 
-     Arduino.print('f');
+     Arduino.print('g');
   }
 
 }
