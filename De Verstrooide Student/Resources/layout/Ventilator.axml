@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="20sp"
-        android:id="@+id/ventilator_status" />
+        android:id="@+id/ventilator_statuss" />
     <TextView
         android:text=""
         android:layout_width="match_parent"

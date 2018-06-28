@@ -2789,26 +2789,26 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0095
 			public const int logTokenButton = 2131427477;
 			
-			// aapt resource value: 0x7f0b00ca
-			public const int masked = 2131427530;
+			// aapt resource value: 0x7f0b00cb
+			public const int masked = 2131427531;
 			
 			// aapt resource value: 0x7f0b00b5
 			public const int media_actions = 2131427509;
 			
-			// aapt resource value: 0x7f0b00cb
-			public const int menu_Home = 2131427531;
-			
-			// aapt resource value: 0x7f0b00cd
-			public const int menu_Kliko = 2131427533;
-			
 			// aapt resource value: 0x7f0b00cc
-			public const int menu_Koelkast = 2131427532;
-			
-			// aapt resource value: 0x7f0b00cf
-			public const int menu_Ventilator = 2131427535;
+			public const int menu_Home = 2131427532;
 			
 			// aapt resource value: 0x7f0b00ce
-			public const int menu_Wasmand = 2131427534;
+			public const int menu_Kliko = 2131427534;
+			
+			// aapt resource value: 0x7f0b00cd
+			public const int menu_Koelkast = 2131427533;
+			
+			// aapt resource value: 0x7f0b00d0
+			public const int menu_Ventilator = 2131427536;
+			
+			// aapt resource value: 0x7f0b00cf
+			public const int menu_Wasmand = 2131427535;
 			
 			// aapt resource value: 0x7f0b00c2
 			public const int message = 2131427522;
@@ -2996,8 +2996,8 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0019
 			public const int tag_transition_group = 2131427353;
 			
-			// aapt resource value: 0x7f0b00c5
-			public const int tempOutputView = 2131427525;
+			// aapt resource value: 0x7f0b00c6
+			public const int tempOutputView = 2131427526;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int text = 2131427354;
@@ -3017,14 +3017,14 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b0093
 			public const int textView3 = 2131427475;
 			
-			// aapt resource value: 0x7f0b00c4
-			public const int textView6 = 2131427524;
+			// aapt resource value: 0x7f0b00c5
+			public const int textView6 = 2131427525;
 			
 			// aapt resource value: 0x7f0b00a8
 			public const int text_input_password_toggle = 2131427496;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int text_wasmand = 2131427527;
+			// aapt resource value: 0x7f0b00c8
+			public const int text_wasmand = 2131427528;
 			
 			// aapt resource value: 0x7f0b0014
 			public const int textinput_counter = 2131427348;
@@ -3080,20 +3080,23 @@ namespace De_Verstrooide_Student
 			// aapt resource value: 0x7f0b002e
 			public const int useLogo = 2131427374;
 			
+			// aapt resource value: 0x7f0b00c4
+			public const int ventilator_status = 2131427524;
+			
 			// aapt resource value: 0x7f0b00c3
-			public const int ventilator_status = 2131427523;
+			public const int ventilator_statuss = 2131427523;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
+			// aapt resource value: 0x7f0b00ca
+			public const int visible = 2131427530;
+			
 			// aapt resource value: 0x7f0b00c9
-			public const int visible = 2131427529;
+			public const int wasmandStatus = 2131427529;
 			
-			// aapt resource value: 0x7f0b00c8
-			public const int wasmandStatus = 2131427528;
-			
-			// aapt resource value: 0x7f0b00c6
-			public const int weatherView = 2131427526;
+			// aapt resource value: 0x7f0b00c7
+			public const int weatherView = 2131427527;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int wide = 2131427362;

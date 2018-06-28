@@ -34,14 +34,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:padding="10dp"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/koelkastFoto" />
+        android:id="@+id/koelkastFoto"
+        android:layout_marginBottom="0.0dp" />
     <TextView
         android:text="De Verstrooide Student © 2018"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/textView1" />
 </LinearLayout>
