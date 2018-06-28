@@ -148,7 +148,8 @@ void Koelkast(){
   }
   if(digitalRead(magnet) == LOW)
   {
-    Serial.println("magneten uit elkaar");
+    Arduino.print('i')
+    Serial.println("magneten bij elkaar");
     countKoelkast = 0;
     noTone(buzzer);
   }
