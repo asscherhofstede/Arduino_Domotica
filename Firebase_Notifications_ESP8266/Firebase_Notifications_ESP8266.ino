@@ -67,6 +67,7 @@ void loop() {
     {
       SendDataToFirebase("De Verstrooide Student", "Je Wasmand is vol! Wassen maar!", "Wasmand", "2");
     }
+
     else if(input == 'h')
     {
       SendDataToFirebase("De Verstrooide Student", "De Koelkast staat nog open", "Koelkast", "0"); 
@@ -75,6 +76,19 @@ void loop() {
     {
       SendDataToFirebase("De Verstrooide Student", "De Koelkast is dicht", "", "1");
     }
+
+    else if(input =='f')
+    {
+      SendDataToFirebase("De Vestrooide Student", "Je koffiezetapparaat staat aan!", "koffieZetApparaat", "0");
+    }
+    else if(input =='g')
+    {
+     SendDataToFirebase("De Verstrooide Student", "Je koffiezetapparaat staat uit en is klaar","koffieZetApparaat","1");
+    }
+    
+    
+    
+
   }  
   delay(250);
 }
