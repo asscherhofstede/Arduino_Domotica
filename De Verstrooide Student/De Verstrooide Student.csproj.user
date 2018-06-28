@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+<<<<<<< HEAD
     <SelectedDevice>OnePlus A5010</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86_Nougat</DefaultDevice>
+=======
+    <SelectedDevice>HMD Global Nokia 7 plus Player</SelectedDevice>
+    <DefaultDevice>Android_Accelerated_x86_Oreo</DefaultDevice>
+>>>>>>> origin/master
     <ProjectView>ShowAllFiles</ProjectView>
     <AndroidDesignerPreferredDevice>pixel</AndroidDesignerPreferredDevice>
   </PropertyGroup>

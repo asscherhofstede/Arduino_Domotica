@@ -54,7 +54,20 @@ void loop() {
     {
       SendDataToFirebase("De Verstrooide Student", "Het is koud! De ventilator gaat uit.", "Ventilator", "0");
     }
-    //
+    //Wasmand
+    else if(input == 'a')
+    {
+      SendDataToFirebase("De Verstrooide Student", "De Wasmand is leeg!", "", "0");
+    }
+    else if(input == 'b')
+    {
+      SendDataToFirebase("De Verstrooide Student", "Je Wasmand is voor de helft vol!", "", "1"); 
+    }
+    else if(input == 'c')
+    {
+      SendDataToFirebase("De Verstrooide Student", "Je Wasmand is vol! Wassen maar!", "Wasmand", "2");
+    }
+    
   }  
   delay(250);
 }
