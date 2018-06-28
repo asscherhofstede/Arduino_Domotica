@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
     android:layout_height="match_parent">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -24,11 +26,30 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Log Token" />
+    <EditText
+        android:text=""
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/VentilatorSetting"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="10dp" />
     <Button
-        android:id="@+id/subscribeButton"
+        android:id="@+id/VentilatorSettingButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:text="Subscribe to Notifications" />
+        android:text="Send Ventilator Value" />
+    <EditText
+        android:text=""
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/KoelkastSetting"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="10dp" />
+    <Button
+        android:id="@+id/KoelkastSettingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Send Koelkast Value" />
 </LinearLayout>

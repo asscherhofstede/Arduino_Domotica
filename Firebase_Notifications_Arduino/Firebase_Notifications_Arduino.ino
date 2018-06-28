@@ -5,7 +5,8 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include <NewRemoteTransmitter.h>
-
+#include <Ethernet.h>
+#include <SPI.h>
 
 
 //Define pins
@@ -28,6 +29,15 @@
 
 //Variables
 int countKliko, countKoelkast, countWasmand, countVentilator, minutes, sound;
+
+byte mac[] = {0x40, 0x6c, 0x8f, 0x36, 0x84, 0x8a};
+EthernetServer server(50007);
+bool connected = false;
+
+int ventilatorSetting = 25;
+int koelkastSetting = 10;
+
+String temp;
 
 OneWire oneWire(tempPin);
 DallasTemperature sensors(&oneWire);
@@ -61,19 +71,25 @@ void setup() {
 
   //Functions
   setTime(9,0,0,1,1,18);
-  
   digitalWrite(magnet, HIGH);
+
+  if(Ethernet.begin(mac) == 0){
+    return;
+  }
+
+  Serial.print("Listening on address: ");
+  Serial.println(Ethernet.localIP());
+  server.begin();
+  connected = true;
 }
 
 void loop() {
-  //Eerst alle methods laten lopen?
-  //Of per onderdeel eerst de method en dan de if statement?
-  //Of in je method al de if statement --> ziet er naar mijn mening beter uit.
+  Settings();
   //Kliko();
   delay(200);
   Koelkast();
   delay(200);
-  //Ventilator();
+  Ventilator();
   delay(200);
   //Wasmand();
   delay(200);
@@ -106,18 +122,18 @@ void Kliko(){
       Serial.println(" minuut/minuten weg");
     }
     countKliko++;
-    Arduino.print('l'); 
   }
-  else {
-   countKliko = 0;
-   Serial.println("Kliko staat op zijn plek :D");
-   Arduino.print('k');
+  else 
+  {
+    countKliko = 0;
+    Serial.println("Kliko staat op zijn plek :D");
+    Arduino.print('b');
   }
   
   if(countKliko == 5 && weekday() == 2 && hour() >= 9)
   {
     Serial.println("Zet de kliko aan de weg!");
-    Arduino.print('j'); 
+    Arduino.print('a'); 
   } 
  
 }
@@ -127,12 +143,12 @@ void Koelkast(){
   {
     countKoelkast++;
     Serial.println(countKoelkast);
-    if ( countKoelkast == 5)
+    if ( countKoelkast == koelkastSetting)
     {
       Arduino.print('h');
       Serial.println("Doe de Koelkast dicht");
     } 
-     if ( countKoelkast > 5)
+     if ( countKoelkast > koelkastSetting)
     {
       if (geluid == true){
         sound = 1500;
@@ -148,7 +164,6 @@ void Koelkast(){
   }
   if(digitalRead(magnet) == LOW)
   {
-    Serial.println("magneten uit elkaar");
     countKoelkast = 0;
     noTone(buzzer);
   }
@@ -161,30 +176,32 @@ void Ventilator(){
   Serial.print(temperatuur);
   Serial.print("°");  
   Serial.println("C");
-  if (temperatuur >= 20 && countVentilator >= 10)         //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
+  if (temperatuur >= ventilatorSetting && countVentilator >= 10)         //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
   {
     if(!unit1)
-          {
-            countVentilator = 0;
-            apa3Transmitter.sendUnit(0, 1);               //Unit1 gaat AAN
-            Arduino.print('d');                           //Geeft waarde 'AAN' naar ESP module
-            unit1 = true;
-                Serial.println("Ventilator is aan!");
-          }
+    {
+      countVentilator = 0;
+      apa3Transmitter.sendUnit(0, 1);                     //Unit1 gaat AAN
+      //delay(100);
+      Arduino.print('d');                                 //Geeft waarde 'AAN' naar ESP module
+      unit1 = true;
+      Serial.println("Ventilator is aan!");
+    }
   }
-  else if (temperatuur < 20 && countVentilator >= 10)     //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
+  else if (temperatuur < ventilatorSetting && countVentilator >= 10)     //Als de temperatuur 20graden of hoger is EN 60s is gemeten > Ventilator aan
   {
     if(unit1) 
     {
       countVentilator = 0;
       apa3Transmitter.sendUnit(0, 0);                     //Unit1 gaat UIT
+      //delay(100);
       Arduino.print('e');                                 //Geeft waarde 'UIT' naar ESP module
       unit1 = false;                                      
       Serial.println("Ventilator is uit!");
     }
   }
-
   countVentilator++;                      
+  Serial.println(countVentilator);
 }
 
 void Wasmand(){
@@ -199,6 +216,13 @@ void Wasmand(){
   countWasmand++;
   
 
+<<<<<<< HEAD
+  if (distanceWasmand < 20){
+    if (countKliko <= 60){
+    Serial.print("De wasmand is ");
+    Serial.print(countWasmand);
+    Serial.println(" seconde vol");
+=======
   if((distance < 100 && distance > 75) && countWasmand > 10){
     Serial.println("De wasmand is leeg!");
     Arduino.print('a');
@@ -206,6 +230,7 @@ void Wasmand(){
       
     if(countWasmand > 10){
       countWasmand = 0;
+>>>>>>> origin/master
     }
   }
   else if((distance < 75 && distance > 25) && countWasmand > 10){
@@ -233,12 +258,11 @@ void Wasmand(){
 void KoffieZetApparaat(){
  if(hour() >= 8)
   {
-    Serial.println("Koffie gaat aan");
      apa3Transmitter.sendUnit(1, 1); 
      Arduino.print('e');
    
   } 
-  else if ( hour() <= 10)
+  else if (hour() <= 10)
   {
      apa3Transmitter.sendUnit(1, 0); 
      Arduino.print('f');
@@ -246,4 +270,58 @@ void KoffieZetApparaat(){
 
 }
 
+void Settings(){
+  if(!connected) {
+    return;
+  }
+  
+  EthernetClient ethernetClient = server.available();
 
+  if(!ethernetClient){
+    return;
+  }
+  while(ethernetClient.connected())
+  {
+    char buffer[128];
+    int count = 0;
+    Serial.println(count);
+    while(ethernetClient.available())
+    {
+      buffer[count++] = ethernetClient.read();
+    }
+    buffer[count] = '\0';
+
+    if(count > 0)
+    {
+      Serial.println(buffer);
+
+      if(strstr(buffer, "Ventilator") != NULL){
+        if(buffer[11] != NULL){
+          String temp = String(buffer[10]);
+          temp = temp + String(buffer[11]);          
+          ventilatorSetting = temp.toInt();
+          Serial.println(ventilatorSetting);          
+        }
+        else{
+          ventilatorSetting = buffer[10] - '0';
+          Serial.println(ventilatorSetting);    
+        }
+      }
+      else if(strstr(buffer, "Koelkast") != NULL)
+      {
+        if(buffer[9] != NULL)
+        {
+          String temp = String(buffer[8]);
+          temp = temp + String(buffer[9]);          
+          koelkastSetting = temp.toInt();
+          Serial.println(koelkastSetting);          
+        }
+        else
+        {
+          koelkastSetting = buffer[8] - '0';
+          Serial.println(koelkastSetting);    
+        }
+      }
+    }
+  }
+}
