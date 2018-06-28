@@ -216,13 +216,7 @@ void Wasmand(){
   countWasmand++;
   
 
-<<<<<<< HEAD
-  if (distanceWasmand < 20){
-    if (countKliko <= 60){
-    Serial.print("De wasmand is ");
-    Serial.print(countWasmand);
-    Serial.println(" seconde vol");
-=======
+
   if((distance < 100 && distance > 75) && countWasmand > 10){
     Serial.println("De wasmand is leeg!");
     Arduino.print('a');
@@ -230,7 +224,7 @@ void Wasmand(){
       
     if(countWasmand > 10){
       countWasmand = 0;
->>>>>>> origin/master
+
     }
   }
   else if((distance < 75 && distance > 25) && countWasmand > 10){
