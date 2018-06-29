@@ -13,13 +13,13 @@
 #define unitCodeApa3        29362034
 #define RFPin               4
 
-#define echoPinKliko        5
-#define trigPinKliko        6
+#define tempPin             5
 
-#define tempPin             7
-
-#define buzzer              8
+#define buzzer              6
 #define magnet              A0
+
+#define echoPinKliko        7
+#define trigPinKliko        8
 
 #define echoPinWasmand      9
 #define trigPinWasmand      10
@@ -45,6 +45,8 @@ float temperatuur = 0;
 bool geluid = true;
 bool unit1 = false;
 bool wasmandVol = false;
+bool koffie = false;
+bool koelkast = false;
  
 NewRemoteTransmitter apa3Transmitter(unitCodeApa3, RFPin, 260, 3);    //transmitter
 
@@ -85,15 +87,15 @@ void setup() {
 
 void loop() {
   Settings();
-  //Kliko();
+  Kliko();
   delay(200);
   Koelkast();
   delay(200);
   Ventilator();
   delay(200);
-  //Wasmand();
+  Wasmand();
   delay(200);
-  //KoffieZetApparaat(); 
+  KoffieZetApparaat(); 
   delay(200);
 
 
@@ -122,18 +124,18 @@ void Kliko(){
       Serial.println(" minuut/minuten weg");
     }
     countKliko++;
+    Arduino.print('l'); 
   }
-  else 
-  {
-    countKliko = 0;
-    Serial.println("Kliko staat op zijn plek :D");
-    Arduino.print('b');
+  else {
+   countKliko = 0;
+   Serial.println("Kliko staat op zijn plek :D");
+   Arduino.print('k');
   }
   
   if(countKliko == 5 && weekday() == 2 && hour() >= 9)
   {
     Serial.println("Zet de kliko aan de weg!");
-    Arduino.print('a'); 
+    Arduino.print('j'); 
   } 
  
 }
@@ -142,11 +144,10 @@ void Koelkast(){
   if(digitalRead(magnet) == HIGH)
   {
     countKoelkast++;
-    Serial.println(countKoelkast);
-    if ( countKoelkast == koelkastSetting)
+    if (countKoelkast == koelkastSetting && koelkast == false)
     {
       Arduino.print('h');
-      Serial.println("Doe de Koelkast dicht");
+      koelkast = true;
     } 
      if ( countKoelkast > koelkastSetting)
     {
@@ -162,12 +163,11 @@ void Koelkast(){
       }
     }
   }
-  if(digitalRead(magnet) == LOW)
+  else if(digitalRead(magnet) == LOW && koelkast == true)
   {
 
-    Arduino.print('i')
-    Serial.println("magneten bij elkaar");
-
+    Arduino.print('i');
+    koelkast = false;
     countKoelkast = 0;
     noTone(buzzer);
   }
@@ -221,7 +221,7 @@ void Wasmand(){
   
 
 
-  if((distance < 100 && distance > 75) && countWasmand > 10){
+  if((distanceWasmand < 100 && distanceWasmand > 75) && countWasmand > 10){
     Serial.println("De wasmand is leeg!");
     Arduino.print('a');
     wasmandVol = false;  
@@ -231,7 +231,7 @@ void Wasmand(){
 
     }
   }
-  else if((distance < 75 && distance > 25) && countWasmand > 10){
+  else if((distanceWasmand < 75 && distanceWasmand > 25) && countWasmand > 10){
     Serial.println("Je wasmand is voor de helft vol!");
     Arduino.print('b');
     wasmandVol = false;
@@ -240,8 +240,7 @@ void Wasmand(){
       countWasmand = 0;
     }
   }
-  else if((distance < 25) && (countWasmand > 10) && (wasmandVol == false)){
-    PORTB = B100000;
+  else if((distanceWasmand < 25) && (countWasmand > 10) && (wasmandVol == false)){
     Serial.print("Je wasmand is vol! Wassen maar!");
     Arduino.print('c');
     wasmandVol = true;
@@ -254,16 +253,17 @@ void Wasmand(){
 
 
 void KoffieZetApparaat(){
- if(hour() >= 8)
+ if(hour() >= 8 && koffie == false)
   {
      apa3Transmitter.sendUnit(1, 1); 
      Arduino.print('f');
-   
+     koffie = true;
   } 
-  else if (hour() <= 10)
+  else if (hour() > 10 && koffie == true)
   {
      apa3Transmitter.sendUnit(1, 0); 
      Arduino.print('g');
+     koffie = false;
   }
 
 }
@@ -323,3 +323,4 @@ void Settings(){
     }
   }
 }
+
